@@ -8,6 +8,7 @@ The template is documented at https://pascalmichaillat.org/b/.
 
 ## Illustration
 
+
 The website produced by the template can be viewed at https://pascalmichaillat.org/hugo-website/.
 
 ## Installation
