@@ -80,8 +80,8 @@ params:
           url: cv.pdf
         - name: Email
           url: mailto:rajesh.krsk@gmail.com
-        - name: Zoom
-          url: https://www.zoom.us/my/igelfeld
+        - name: LinkedIn
+          url: https://www.linkedin.com/in/rajeshrrajeshr/
         - name: Location
           url: location/
         - name: Office Hours
@@ -90,14 +90,11 @@ params:
           url: https://scholar.google.com/citations?user=QOwRUvMAAAAJ&hl=en
         - name: GitHub
           url: https://github.com/its-rajesh
-        - name: Substack
-          url: https://pmichaillat.substack.com
-        - name: YouTube
-          url: https://www.youtube.com/@pmichaillat
+        - name: Instagram
+          url: https://www.instagram.com/its.mr.zero/
         - name: Twitter
           url: https://x.com/Rajesh_smartino
-        - name: Bluesky
-          url: https://bsky.app/profile/pmichaillat.bsky.social
+        
 
     assets:
         disableScrollBarStyle: true
