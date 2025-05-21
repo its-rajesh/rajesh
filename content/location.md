@@ -18,7 +18,7 @@ University of Illinois Chicago
 
 #### location
 
-<iframe src="https://g.co/kgs/h4dWoQr" 
+<iframe src="https://maps.app.goo.gl/J7x7f6pdC612QpqN9" 
 width="700" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 
 
