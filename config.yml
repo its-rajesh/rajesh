@@ -29,7 +29,7 @@ menu:
           weight: 6
 
 params:
-    description: "This website hosts Moritz-Maria von Igelfeld's research papers, books, course materials, data, curriculum vitae, and contact information."
+    description: "This website hosts Rajesh's research papers, books, course materials, data, curriculum vitae, and contact information."
     author: Rajesh R
     # googleAnalyticsID: "G-XXXXX"
     DateFormat: "January 2006"
@@ -79,7 +79,7 @@ params:
         - name: CV
           url: cv.pdf
         - name: Email
-          url: mailto:igelfeld@regensburg.edu
+          url: mailto:rajesh.krsk@gmail.com
         - name: Zoom
           url: https://www.zoom.us/my/igelfeld
         - name: Location
@@ -87,15 +87,15 @@ params:
         - name: Office Hours
           url: officehours/
         - name: Google Scholar
-          url: https://scholar.google.com/citations?user=cL23w-4AAAAJ
+          url: https://scholar.google.com/citations?user=QOwRUvMAAAAJ&hl=en
         - name: GitHub
-          url: https://github.com/pmichaillat
+          url: https://github.com/its-rajesh
         - name: Substack
           url: https://pmichaillat.substack.com
         - name: YouTube
           url: https://www.youtube.com/@pmichaillat
         - name: Twitter
-          url: https://x.com/pmichaillat
+          url: https://x.com/Rajesh_smartino
         - name: Bluesky
           url: https://bsky.app/profile/pmichaillat.bsky.social
 
@@ -105,7 +105,7 @@ params:
         hiddenInList: false
         hiddenInSingle: true
     label:
-      text: "Moritz-Maria von Igelfeld"
+      text: "Rajesh Rameshbabu"
       icon: favicon.ico
       iconHeight: 18
 
