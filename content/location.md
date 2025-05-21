@@ -11,7 +11,9 @@ description: "Rajesh's mailing and office addresses at the University of Illinoi
 #### Office Space
 
 SEL 4250
+
 Science and Engineering Laboratory
+
 University of Illinois Chicago  
 
 ---
