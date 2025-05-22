@@ -4,6 +4,7 @@ date: 2023-09-15
 tags: ["interference reduction","music source separation","multi-track recordings","Live data"]
 author: ["Rajesh R","Padmanabhan Rajan"]
 description: "This paper introduces two neural networks for interference reduction in multi-track recordings: a convolutional autoencoder using time-frequency inputs (interference treated as noise) and a truncated U-Net operating in the time domain (interference reduction based on relationship among multi-track data). Experiments show that both models improve music source separation, with the truncated U-Net delivering superior performance and audio quality." 
+
 cover:
     image: "paper1.png"
     alt: "IRMR"
