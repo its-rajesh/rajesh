@@ -44,7 +44,7 @@ params:
     ShowBreadCrumbs: false
     ShowCodeCopyButtons: true
     ShowAllPagesInArchive: false
-    MainSections: ["books","courses","papers","data"]
+    MainSections: ["papers","projects"]
     ShowToc: false
     disableScrollToTop: true
     TocOpen: true
@@ -62,8 +62,8 @@ params:
           buttons:
             - name: Papers
               url: papers/
-            #- name: Data
-            #  url: data/
+            - name: Projects
+              url: projects/
             #- name: Books
             #  url: books/
             #- name: Courses
