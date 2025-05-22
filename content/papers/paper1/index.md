@@ -10,7 +10,7 @@ cover:
     alt: "IRMR"
     relative: true
 editPost:
-    URL: "https://github.com/its-rajesh/IRMR/"
+    URL: "https://www.waspaa.com/waspaa23/"
     Text: "WASPAA 2023"
 
 ---
