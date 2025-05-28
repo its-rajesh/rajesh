@@ -35,6 +35,6 @@ We propose a deep convolutional neural network architecture for classifying and 
 
 ##### Figure: Architecture
 
-![](MusicSpeechClassifier.png)
+![](MusicSpeechClassifier.jpg)
 
 ---
