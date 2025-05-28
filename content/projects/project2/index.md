@@ -1,9 +1,9 @@
 ---
-title: "Neural Networks for Interference Reduction in Multi-Track Recordings" 
-date: 2023-09-15
+title: "Interference Reduction or Music Bleeding Removal" 
+date: 2025-05-27
 tags: ["interference reduction","music source separation","multi-track recordings","Live data"]
-author: ["Rajesh R","Padmanabhan Rajan"]
-description: "This paper proposed the two neural networks for interference reduction. Published in WASPAA, 2023"
+author: ["Rajesh R"]
+description: "This project aims to reduce the bleeding effects in the recorded microphone recordings"
 summary: "This paper introduces two neural networks for interference reduction in multi-track recordings: a convolutional autoencoder using time-frequency inputs (interference treated as noise) and a truncated U-Net operating in the time domain (interference reduction based on relationship among multi-track data). Experiments show that both models improve music source separation, with the truncated U-Net delivering superior performance and audio quality."
 cover:
     image: "paper1.png"
@@ -37,20 +37,7 @@ Multi-track recordings are sometimes created by simultaneously capturing several
 
 ---
 
-##### Citation
 
-Rajesh R and P. Rajan, "Neural Networks for Interference Reduction in Multi-Track Recordings," 2023 IEEE Workshop on Applications of Signal Processing to Audio and Acoustics (WASPAA), New Paltz, NY, USA, 2023, pp. 1-5.
-
-```BibTeX
-@INPROCEEDINGS{10248133,
-  author={R, Rajesh and Rajan, Padmanabhan},
-  booktitle={2023 IEEE Workshop on Applications of Signal Processing to Audio and Acoustics (WASPAA)}, 
-  title={Neural Networks for Interference Reduction in Multi-Track Recordings}, 
-  year={2023},
-  volume={},
-  number={},
-  pages={1-5}}
-```
 
 ---
 
