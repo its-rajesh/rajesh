@@ -12,7 +12,7 @@ cover:
     relative: true
 editPost:
     URL: "https://github.com/its-rajesh/Music-Speech-Separation/"
-    Text: "Git"
+    Text: "Github"
 
 ---
 
@@ -22,7 +22,7 @@ editPost:
 
 + [Technical details](paper1.pdf)
 + [Code and data](https://github.com/its-rajesh/Music-Speech-Separation/)
-+ [Pretrained model]()
++ [Pretrained model](https://drive.google.com/file/d/1t2qvemObK1w1GPa3NHYy-IasVGacjcMT/view?usp=drive_link)
   
 ---
 
@@ -33,29 +33,8 @@ We propose a deep convolutional neural network architecture for classifying and 
 
 ---
 
-##### Figure: t-UNet Architecture
+##### Figure: Architecture
 
 ![](MusicSpeechClassifier.png)
 
 ---
-
-##### Citation
-
-Rajesh R and P. Rajan, "Neural Networks for Interference Reduction in Multi-Track Recordings," 2023 IEEE Workshop on Applications of Signal Processing to Audio and Acoustics (WASPAA), New Paltz, NY, USA, 2023, pp. 1-5.
-
-```BibTeX
-@INPROCEEDINGS{10248133,
-  author={R, Rajesh and Rajan, Padmanabhan},
-  booktitle={2023 IEEE Workshop on Applications of Signal Processing to Audio and Acoustics (WASPAA)}, 
-  title={Neural Networks for Interference Reduction in Multi-Track Recordings}, 
-  year={2023},
-  volume={},
-  number={},
-  pages={1-5}}
-```
-
----
-
-##### Related material
-
-+ [Presentation slides](presentation1.pdf)
