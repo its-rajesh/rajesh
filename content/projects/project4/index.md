@@ -1,5 +1,5 @@
 ---
-title: "Removing music from speech" 
+title: "Removing Music from Speech" 
 date: 2022-05-15
 tags: ["speech enhancement","noise reduction","classification"]
 author: ["Rajesh R"]
