@@ -1,17 +1,18 @@
 ---
-title: "Neural Networks for Interference Reduction in Multi-Track Recordings" 
-date: 2023-09-15
-tags: ["interference reduction","music source separation","multi-track recordings","Live data"]
-author: ["Rajesh R","Padmanabhan Rajan"]
-description: "This paper proposed the two neural networks for interference reduction. Published in WASPAA, 2023"
-summary: "This paper introduces two neural networks for interference reduction in multi-track recordings: a convolutional autoencoder using time-frequency inputs (interference treated as noise) and a truncated U-Net operating in the time domain (interference reduction based on relationship among multi-track data). Experiments show that both models improve music source separation, with the truncated U-Net delivering superior performance and audio quality."
+title: "Removing music from speech" 
+date: 2022-05-15
+tags: ["speech enhancement","noise reduction","classification"]
+author: ["Rajesh R"]
+description: "This work proposed the simple CNN to extract only the speech component from AIR data"
+summary: "A deep convolutional neural network-based architecture is trained to completely remove the
+music in a given music+speech audio for a other NLP task"
 cover:
-    image: "paper1.png"
-    alt: "IRMR"
+    image: "MusicSpeechClassifier.jpg"
+    alt: "SpeechvsMusic"
     relative: true
 editPost:
-    URL: "https://www.waspaa.com/waspaa23/"
-    Text: "WASPAA 2023"
+    URL: "https://github.com/its-rajesh/Music-Speech-Separation/"
+    Text: "Git"
 
 ---
 
@@ -19,21 +20,22 @@ editPost:
 
 ##### Download
 
-+ [Paper](paper1.pdf)
-+ [Code and data](https://github.com/its-rajesh/IRMR)
-+ [Xplore](https://ieeexplore.ieee.org/document/10248133)
++ [Technical details](paper1.pdf)
++ [Code and data](https://github.com/its-rajesh/Music-Speech-Separation/)
++ [Pretrained model]()
   
 ---
 
 ##### Abstract
 
-Multi-track recordings are sometimes created by simultaneously capturing several sources with several microphones. This scenario can result in the interference of undesired source(s) in the various tracks. Interference reduction aims to recover the source(s) associated with a particular track. In this paper, we present two neural networks for interference reduction. The first network uses a convolutional autoencoder-based architecture and uses time-frequency representation as input. The second network uses a truncated U-net architecture and directly estimates the interference from the time-domain multi-track representation. Our experiments indicate the effectiveness of the proposed methods, with the truncated U-net showing superior performance. Also, the audio outputs produced by the proposed methods have improved quality, resulting in better music source separation performance. 
+We propose a deep convolutional neural network architecture for classifying and isolating music and speech components in mixed audio recordings. The system processes short audio chunks using short-time Fourier transform (STFT) to generate spectrogram representations, which are then fed into a series of convolutional and dense layers. Trained to differentiate between music and speech, the model is optimized to completely remove the music component, enabling improved performance in downstream natural language processing (NLP) tasks that require clean speech signals. The framework demonstrates strong potential for preprocessing audio in noisy, music-rich environments.
+
 
 ---
 
 ##### Figure: t-UNet Architecture
 
-![](paper1.png)
+![](MusicSpeechClassifier.png)
 
 ---
 
