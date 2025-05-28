@@ -37,7 +37,67 @@ Multi-track recordings are sometimes created by simultaneously capturing several
 
 ---
 
+<section class="timeline">
 
+{{< phase
+      icon="/img/idea.svg"
+      abbr="Idea"
+      title="Research Problem Defined"
+      date="Jan 2024" >}}
+
+Framed the task as **interference‑reduction** with perfect‑reconstruction
+constraints. Literature survey on learnable filterbanks.
+
+{{< /phase >}}
+
+{{< phase
+      icon="/img/code.svg"
+      abbr="MVP"
+      title="Initial Prototype"
+      date="Apr 2024" >}}
+
+- Built Wave‑U‑Net baseline  
+- Implemented DWT layer with **impulse‑initialised** filters  
+- Early SI‑SDR ≈ ‑44 dB (stagnant)
+
+{{< /phase >}}
+
+{{< phase
+      icon="/img/graph.svg"
+      abbr="Tuning"
+      title="GAN Loss + Curriculum"
+      date="Aug 2024" >}}
+
+Introduced WGAN‑GP objective and **curriculum on hop sizes** → eliminated
+high‑frequency artefacts. **+7 dB SI‑SDR improvement**.
+
+{{< /phase >}}
+
+{{< phase
+      icon="/img/paper.svg"
+      abbr="Paper"
+      title="Paper Submission"
+      date="Feb 2025" >}}
+
+Submitted to **INTERSPEECH 2025**.  
+ArXiv preprint available  
+[[PDF]](/files/wavenet_dwt_preprint.pdf) ·
+[[Code]](https://github.com/its‑rajesh/waveunet‑dwt)
+
+{{< /phase >}}
+
+{{< phase
+      icon="/img/rocket.svg"
+      abbr="Now"
+      title="Ongoing Work"
+      date="Present" >}}
+
+- Multi‑channel extension with GAT bottleneck  
+- Real‑time TensorRT inference
+
+{{< /phase >}}
+
+</section>
 
 ---
 
