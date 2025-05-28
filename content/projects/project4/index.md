@@ -20,7 +20,6 @@ editPost:
 
 ##### Download
 
-+ [Technical details](paper1.pdf)
 + [Code and data](https://github.com/its-rajesh/Music-Speech-Separation/)
 + [Pretrained model](https://drive.google.com/file/d/1t2qvemObK1w1GPa3NHYy-IasVGacjcMT/view?usp=drive_link)
   
