@@ -98,6 +98,8 @@ params:
 
     assets:
         disableScrollBarStyle: true
+        css:
+          - "css/timeline.css"
     cover:
         hiddenInList: false
         hiddenInSingle: true
