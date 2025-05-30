@@ -95,6 +95,7 @@ ArXiv preprint available
 - Multi‑channel extension with GAT bottleneck  
 - Real‑time TensorRT inference
 
+
 {{< /phase >}}
 
 </section>
