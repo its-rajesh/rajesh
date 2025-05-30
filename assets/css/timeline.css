@@ -1,0 +1,36 @@
+/* assets/css/timeline.css  */
+
+/* vertical spine */
+.timeline{
+  position:relative;
+  margin-left:60px;          /* space for icon boxes */
+  padding-left:40px;
+}
+.timeline::before{
+  content:"";
+  position:absolute;
+  top:0;left:20px;
+  width:2px;height:100%;
+  background:#444;
+}
+
+/* one entry */
+.tl-item{position:relative;margin-bottom:48px}
+.tl-icon{
+  position:absolute;left:-60px;top:0;
+  width:40px;height:40px;border-radius:8px;overflow:hidden;
+  background:#fff;display:flex;align-items:center;justify-content:center;
+  box-shadow:0 0 0 3px #444;
+}
+.tl-icon img{width:100%;height:100%;object-fit:contain}
+.tl-content h3{margin:0 0 4px 0;font-size:1.2rem;font-weight:700}
+.tl-content .tl-date{display:block;margin-bottom:8px;color:#c4b66f;font-weight:600}
+.tl-content ul{margin:0 0 0 16px}
+.tl-content li{margin:4px 0}
+.tl-content ul li::marker{color:#46e2ff}
+
+/* mobile */
+@media(max-width:600px){
+  .timeline{margin-left:40px;padding-left:24px}
+  .tl-icon{left:-40px;width:32px;height:32px}
+}
