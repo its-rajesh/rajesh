@@ -6,11 +6,11 @@ author: ["Rajesh R", "Padmanabhan Rajan"]
 description: "This research focus on the direction of universal music source separation"
 summary: "Current state-of-the-art models, such as Facebook’s Hybrid Transformer Demucs and Band-split RNN, demonstrate strong performance on Western music but struggle with Indian classical music and out-of-domain instrument separation. This performance gap underscores the need for further research into developing source-agnostic and universally robust music source separation models."
 cover:
-    image: "paper1.png"
-    alt: "IRMR"
+    image: "cover.png"
+    alt: "Trends"
     relative: true
 editPost:
-    #URL: "https://www.waspaa.com/waspaa23/"
+    URL: ""
     Text: "Indian Institute of Technology Mandi"
 
 ---
@@ -24,7 +24,7 @@ To address this, a dedicated MSS model for Carnatic music has been developed usi
 
 ##### Approaches
 1. Fine-tuning several state-of-the-art MSS architectures, including [Hybrid Transformer Demucs](https://arxiv.org/abs/2211.08553), [Wave-U-Net](https://arxiv.org/abs/1806.03185), and TF U-Net.
-2. Designing a diffusion-based neural model tailored to the characteristics of Carnatic music.
+2. Designing a diffusion-based neural model tailored to the Carnatic music.
 
 ---
 ##### Trends in MSS
