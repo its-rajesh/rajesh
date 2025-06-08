@@ -10,8 +10,8 @@ cover:
     alt: "IRMR"
     relative: true
 editPost:
-    URL: "https://www.waspaa.com/waspaa23/"
-    Text: "WASPAA 2023"
+    #URL: "https://www.waspaa.com/waspaa23/"
+    #Text: "WASPAA 2023"
 
 ---
 
