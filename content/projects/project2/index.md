@@ -1,5 +1,5 @@
 ---
-title: "Interference Reduction or Music Bleeding Removal" 
+title: "Music Bleed or Interference Reduction" 
 date: 2025-05-27
 tags: ["interference reduction","music source separation","multi-track recordings","Live data"]
 author: ["Rajesh R", "Padmanabhan Rajan", "Ryan Corey"]
@@ -80,7 +80,7 @@ GIRNet is designed for convolutive mixtures with additional noise and works in t
 
 ###### Download
 
-+ [Paper]() <span style="background-color: #f0f0f0; font-style: italic;">(In Review)</span>
++ [Paper]() <span style="background-color: #f0f0f0; font-style: italic;">(Under Review)</span>
 + [Code and Data]()
 + [Audio Samples](https://sites.google.com/view/inmir/)
 
@@ -88,22 +88,13 @@ GIRNet is designed for convolutive mixtures with additional noise and works in t
 
 ### Generative based approach
 
-<span style="background-color: #f0f0f0; font-style: italic;">(In Review)</span>
+<span style="background-color: #f0f0f0; font-style: italic;">(Under Review)</span>
 
 ---
 
 ### Learnable front ends
 
-We incorporate learnable time-domain front-ends (e.g., wavelet or filterbank layers) into the source separation models, enabling task-driven representation learning that can adaptively focus on multiresolution signal features.
-
-- Pros: Learnable representations offer adaptability to different signal conditions, efficient, and high performance.
-- Cons: Fixed number of channels.
-
-###### Download
-
-+ [Paper]() <span style="background-color: #f0f0f0; font-style: italic;">(In Review)</span>
-+ [Code and Data]()
-+ [Audio Samples]()
+<span style="background-color: #f0f0f0; font-style: italic;">(Under Review)</span>
 
 ---
 
@@ -120,14 +111,14 @@ The table below compares various proposed methods against the baseline KAMIR alg
 
 | Models | Vocal | Bass | Drums | Others | Overall SDR | 
 |------|-----|-----|-----|-----|-----|
-|[Reference]()| 1.86 | 4.44 | 6.78 | 5.96 | 5.82 | 
+|Reference| 1.86 | 4.44 | 6.78 | 5.96 | 5.82 | 
 |[KAMIR](https://ieeexplore.ieee.org/abstract/document/7178036)| 13.84 | 6.75 | 6.83 | 5.61 | 7.00 |
-|[DI-CAE]()| 1.89 | 5.81 | 6.18 | 4.48 | 6.92 | 
-|[Optimisation]()*| 39.25 | 42.90 | 44.22 | 42.11 | 42.12 |
-|[t-UNet]()| 8.05 | 9.05 | 8.255 | 6.69 | 8.83 |
-|[f-UNet]()| 6.50 | 9.84 | 10.85 | 10.32 | 9.38 | 
-|[df-UNet]()| 6.50 | 9.84 | 10.85 | 10.32 | 11.54 |
-|[df-UNet-GAT]()| 16.50 | 19.84 | 20.85 | 20.32 | __21.54__ |
+|DI-CAE| 1.89 | 5.81 | 6.18 | 4.48 | 6.92 | 
+|Optimisation*| 39.25 | 42.90 | 44.22 | 42.11 | 42.12 |
+|t-UNet| 8.05 | 9.05 | 8.255 | 6.69 | 8.83 |
+|f-UNet| 6.50 | 9.84 | 10.85 | 10.32 | 9.38 | 
+|df-UNet| 6.50 | 9.84 | 10.85 | 10.32 | 11.54 |
+|df-UNet-GAT| 16.50 | 19.84 | 20.85 | 20.32 | __21.54__ |
 
 > \* Optimization is non-real-time and assumes ideal multichannel access.
 
