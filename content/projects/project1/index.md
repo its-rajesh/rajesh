@@ -26,6 +26,10 @@ To address this, a dedicated MSS model for Carnatic music has been developed usi
 1. Fine-tuning several state-of-the-art MSS architectures, including [Hybrid Transformer Demucs](https://arxiv.org/abs/2211.08553), [Wave-U-Net](https://arxiv.org/abs/1806.03185), and TF U-Net.
 2. Designing a diffusion-based neural model tailored to the characteristics of Carnatic music.
 
+---
+##### Trends in MSS
+
+![](cover.png)
 
 ---
 
