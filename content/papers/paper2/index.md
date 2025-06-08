@@ -34,7 +34,7 @@ The proposed techniques have reduced interference and improved source-to-distort
 Rajesh R, 2024. "Interference Reduction in Microphone Recordings for Music Source Separation." MS by Research Thesis, Indian Institute of Technology Mandi.
 
 ```BibTeX
-@phdthesis{rajesh2024,
+@msthesis{rajesh2024,
 author={R, Rajesh},
 title={Interference Reduction in Microphone Recordings for Music Source Separation},
 school={Indian Institute of Technology Mandi},
