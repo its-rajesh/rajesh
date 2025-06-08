@@ -116,9 +116,9 @@ The table below compares various proposed methods against the baseline KAMIR alg
 |DI-CAE| 1.89 | 5.81 | 6.18 | 4.48 | 6.92 | 
 |Optimisation*| 39.25 | 42.90 | 44.22 | 42.11 | 42.12 |
 |t-UNet| 8.05 | 9.05 | 8.255 | 6.69 | 8.83 |
-|f-UNet| 6.50 | 9.84 | 10.85 | 10.32 | 9.38 | 
-|df-UNet| 6.50 | 9.84 | 10.85 | 10.32 | 11.54 |
-|df-UNet-GAT| 16.50 | 19.84 | 20.85 | 20.32 | __21.54__ |
+|f-UNet| 6.15 | 9.41 | 7.01 | 7.23 | 7.45 | 
+|df-UNet| 6.50 | 9.84 | 8.85 | 8.32 | 8.37 |
+|df-UNet-GAT| 12.53 | 11.97 | 11.77 | 13.00 | __12.31__ |
 
 > \* Optimization is non-real-time and assumes ideal multichannel access.
 
