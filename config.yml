@@ -72,8 +72,8 @@ params:
             #  url: tags/
             #- name: Archive
             #  url: archive/
-            #- name: Blog
-            #  url: https://en.wikipedia.org/wiki/Moritz-Maria_von_Igelfeld_(character)
+            - name: Blog
+              url: https://github.com/its-rajesh
 
     socialIcons:
         - name: CV
@@ -82,10 +82,10 @@ params:
           url: mailto:rajesh.krsk@gmail.com
         - name: LinkedIn
           url: https://www.linkedin.com/in/rajeshrrajeshr/
-        - name: Location
-          url: location/
-        - name: Office Hours
-          url: officehours/
+        #- name: Location
+        #  url: location/
+        #- name: Office Hours
+        #  url: officehours/
         - name: Google Scholar
           url: https://scholar.google.com/citations?user=QOwRUvMAAAAJ&hl=en
         - name: GitHub
