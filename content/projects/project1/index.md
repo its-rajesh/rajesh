@@ -2,7 +2,7 @@
 title: "Music Source Separation" 
 date: 2023-01-01
 tags: ["Music source separation","Multi-track recordings","Deep learning"]
-author: ["Rajesh R"]
+author: ["Rajesh R", "Padmanabhan Rajan"]
 description: "This research focus on the direction of universal music source separation"
 summary: "Current state-of-the-art models, such as Facebook’s Hybrid Transformer Demucs and Band-split RNN, demonstrate strong performance on Western music but struggle with Indian classical music and out-of-domain instrument separation. This performance gap underscores the need for further research into developing source-agnostic and universally robust music source separation models."
 cover:
@@ -11,7 +11,7 @@ cover:
     relative: true
 editPost:
     #URL: "https://www.waspaa.com/waspaa23/"
-    #Text: "WASPAA 2023"
+    Text: "Indian Institute of Technology Mandi"
 
 ---
 
@@ -31,15 +31,8 @@ To address this, a dedicated MSS model for Carnatic music has been developed usi
 
 ##### Materials
 
-+ [Code](https://github.com/its-rajesh/Wave-U-Net)
++ [Codes and Results](https://github.com/its-rajesh/Wave-U-Net)
   
----
-
-
-
-
----
-
 ---
 
 
