@@ -35,9 +35,9 @@ We propose a optimization-based technique that iteratively estimates the extent 
 
 ###### Download
 
-+[Paper]()
-+[Code and Data](https://github.com/its-rajesh/Audio-Bleeding-Removal)
-+[Audio Samples](https://sites.google.com/view/inmir/)
++ [Paper]()
++ [Code and Data](https://github.com/its-rajesh/Audio-Bleeding-Removal)
++ [Audio Samples](https://sites.google.com/view/inmir/)
 
 ---
 
@@ -50,9 +50,9 @@ Assuming interference behaves like additive noise, a simple convolutional autoen
  
 ###### Download
 
-+[Paper](https://ieeexplore.ieee.org/document/10248133)
-+[Code and Data]( https://github.com/its-rajesh/IRMR/)
-+[Audio Samples](https://sites.google.com/view/inmir/)
++ [Paper](https://ieeexplore.ieee.org/document/10248133)
++ [Code and Data]( https://github.com/its-rajesh/IRMR/)
++ [Audio Samples](https://sites.google.com/view/inmir/)
 
 ---
 
@@ -65,9 +65,9 @@ This approach models the problem as instantaneous mixing and operates directly i
 
 ###### Download
 
-+[Paper](https://ieeexplore.ieee.org/document/10248133)
-+[Code and Data]( https://github.com/its-rajesh/IRMR/)
-+[Audio Samples](https://sites.google.com/view/inmir/)
++ [Paper](https://ieeexplore.ieee.org/document/10248133)
++ [Code and Data]( https://github.com/its-rajesh/IRMR/)
++ [Audio Samples](https://sites.google.com/view/inmir/)
 
 ---
 
@@ -80,9 +80,9 @@ GIRNet is designed for convolutive mixtures with additional noise and works in t
 
 ###### Download
 
-+[Paper]() <span style="background-color: #f0f0f0; font-style: italic;">(In Review)</span>
-+[Code and Data]()
-+[Audio Samples](https://sites.google.com/view/inmir/)
++ [Paper]() <span style="background-color: #f0f0f0; font-style: italic;">(In Review)</span>
++ [Code and Data]()
++ [Audio Samples](https://sites.google.com/view/inmir/)
 
 ---
 
@@ -101,9 +101,9 @@ We incorporate learnable time-domain front-ends (e.g., wavelet or filterbank lay
 
 ###### Download
 
-+[Paper]() <span style="background-color: #f0f0f0; font-style: italic;">(In Review)</span>
-+[Code and Data]()
-+[Audio Samples]()
++ [Paper]() <span style="background-color: #f0f0f0; font-style: italic;">(In Review)</span>
++ [Code and Data]()
++ [Audio Samples]()
 
 ---
 
