@@ -1,10 +1,10 @@
 ---
 title: "Music Source Separation" 
-date: 2025-05-27
-tags: ["Music source separation","Multi-track recordings","Deep learning", "On going research"]
+date: 2023-01-01
+tags: ["Music source separation","Multi-track recordings","Deep learning"]
 author: ["Rajesh R"]
 description: "This research focus on the direction of universal music source separation"
-summary: "Currently, state-of-the-art models such as Facebook's Hybrid Transformer Demucs and Band-split RNN perform very well on Western music but struggle with Indian art classical music and out-of-domain instrument separation. This highlights the need for research in developing source-agnostic, universal music source separation models."
+summary: "Current state-of-the-art models, such as Facebook’s Hybrid Transformer Demucs and Band-split RNN, demonstrate strong performance on Western music but struggle with Indian classical music and out-of-domain instrument separation. This performance gap underscores the need for further research into developing source-agnostic and universally robust music source separation models."
 cover:
     image: "paper1.png"
     alt: "IRMR"
@@ -16,22 +16,25 @@ editPost:
 ---
 
 ---
+### Source Separation for Carnatic Music
 
-##### Download
+Indian classical [Carnatic music](https://en.wikipedia.org/wiki/Carnatic_music) comprises diverse sources such as mridangam, violin, ghatam, and multiple vocal lines (typically two or three). These sources, particularly in combination with the complex vocal styles, are significantly out-of-domain for existing state-of-the-art music source separation (MSS) systems. Consequently, developing specialized source separation models for Carnatic music can substantially enhance the performance of various downstream music information retrieval (MIR) tasks in the Indian music context.
 
-+ [Paper](paper1.pdf)
-+ [Code and data](https://github.com/its-rajesh/IRMR)
-+ [Xplore](https://ieeexplore.ieee.org/document/10248133)
+To address this, a dedicated MSS model for Carnatic music has been developed using the Saraga dataset.
+
+##### Approaches
+1. Fine-tuning several state-of-the-art MSS architectures, including [Hybrid Transformer Demucs](https://arxiv.org/abs/2211.08553), [Wave-U-Net](https://arxiv.org/abs/1806.03185), and TF U-Net.
+2. Designing a diffusion-based neural model tailored to the characteristics of Carnatic music.
+
+
+---
+
+##### Materials
+
++ [Code](https://github.com/its-rajesh/Wave-U-Net)
   
 ---
 
-##### Abstract
-
-Existing state-of-the-art music source separation models, like Hybrid Transformer Demucs and Band-split RNN, achieve strong performance on Western music. However, they struggle with Indian classical music and unfamiliar instruments, indicating poor generalization across diverse musical traditions. This performance gap highlights the limitations of current models in handling out-of-domain data. Consequently, there is a growing need for developing source-agnostic, universal models capable of robust separation across varied music genres.
-
----
-
-##### Figure: t-UNet Architecture
 
 
 
@@ -39,6 +42,4 @@ Existing state-of-the-art music source separation models, like Hybrid Transforme
 
 ---
 
-##### Related material
 
-+ [Presentation slides](presentation1.pdf)
