@@ -31,7 +31,7 @@ menu:
 params:
     description: "This website hosts Rajesh's research papers, books, course materials, data, curriculum vitae, and contact information."
     author: Rajesh R
-    # googleAnalyticsID: "G-XXXXX"
+    googleAnalyticsID: "G-0XGK1HR32V"
     DateFormat: "January 2006"
     defaultTheme: light
     hideFooter: false
