@@ -24,7 +24,7 @@ description: "GIRNet: Graph-Based Interference Reduction for multitrack music re
 </p>
 
 <div style="text-align: center;">
-  <img src="/papers/girnet/girnet-architecture.png" alt="GIRNet Architecture" style="max-width: 90%; height: auto;">
+  <img src="/papers/girnet/dfUNetGE.png" alt="GIRNet Architecture" style="max-width: 90%; height: auto;">
 </div>
 
 ### Abstract
