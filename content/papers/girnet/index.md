@@ -32,17 +32,24 @@ editPost:
   <a href="/papers/girnet/girnet.pdf">PDF</a>
 </p>
 
-![](dfUNetGE.png.png)
+##### Download
 
++ [Paper](girnet.pdf)
++ [Code and data](https://github.com/its-rajesh/GIRNet)
++ [Xplore]()
+
+---
+##### ARCHITECTURE
+
+![](dfUNetGE.png)
+
+
+---
 
 ### Abstract
 
 <div style="text-align: justify;">
-In live concerts, the microphone that is intended to capture individual sources often ends up picking up neighbouring sources due to the lack of acoustic shielding. This phenomenon can result in interference between the captured audio streams. The process of eliminating the sound of these unintended sources from the primary source is known as interference reduction.
-
-In this paper, we present a learning-based framework, the Graph Interference Reduction Network (GIRNet), designed to mitigate interference in live recordings. Diverging from the conventional approach of treating interference as noise, our method focuses on estimating the relationships among various audio sources, thereby facilitating effective interference reduction.
-
-Experimental results demonstrate the superior performance of our proposed model compared to existing methods, as evidenced by improvements in Signal-to-Distortion Ratio (SDR). Moreover, our model exhibits promising generalizability to out-of-domain classes through post-processing techniques. The outcomes of listening tests underscore the model’s efficacy in the context of live recordings.
+In live concerts, the microphone that is intended to capture individual sources often ends up picking up neighbouring sources due to the lack of acoustic shielding. This phenomenon can result in interference between the captured audio streams. The process of eliminating the sound of these unintended sources from the primary source is known as interference reduction. In this paper, we present a learning-based framework, the Graph Interference Reduction Network (GIRNet), designed to mitigate interference in live recordings. Diverging from the conventional approach of treating interference as noise, our method focuses on estimating the relationships among various audio sources, thereby facilitating effective interference reduction. Experimental results demonstrate the superior performance of our proposed model compared to existing methods, as evidenced by improvements in Signal-to-Distortion Ratio (SDR). Moreover, our model exhibits promising generalizability to out-of-domain classes through post processing techniques. The outcomes of listening tests underscore the model’s efficacy in the context of live recordings.
 </div>
 
 ---
