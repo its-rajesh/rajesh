@@ -1,8 +1,18 @@
 ---
-title: ""
+title: "GIRNet: Graph-Based Interference Reduction for multitrack music recordings" 
 date: 2025-07-10
-layout: single
-description: "GIRNet: Graph-Based Interference Reduction for multitrack music recordings"
+tags: ["Graph Attention Networks", "interference reduction","music source separation","multi-track recordings","Live data"]
+author: ["Rajesh R","Padmanabhan Rajan"]
+description: "This paper proposed the two neural networks for interference reduction. Published in xxxx, 2025"
+summary: "This paper introduces two neural networks for interference reduction in multi-track recordings: a convolutional autoencoder using time-frequency inputs (interference treated as noise) and a truncated U-Net operating in the time domain (interference reduction based on relationship among multi-track data). Experiments show that both models improve music source separation, with the truncated U-Net delivering superior performance and audio quality."
+cover:
+    image: "paper1.png"
+    alt: "IRMR"
+    relative: true
+editPost:
+    URL: "https://www.waspaa.com/waspaa23/"
+    Text: "WASPAA 2023"
+
 ---
 
 # GIRNet: Graph-Based Interference Reduction
