@@ -1,5 +1,5 @@
 ---
-title: "GIRNet: Graph-Based Interference Reduction for multitrack music recordings" 
+title: "GIRNet: Graph-Based Interference Reduction for Multitrack Music Recordings" 
 date: 2025-07-10
 tags: ["Graph Attention Networks", "interference reduction","music source separation","multi-track recordings","Live data"]
 author: ["Rajesh R","Padmanabhan Rajan"]
@@ -57,6 +57,10 @@ This recording was captured in a live concert scenario with three microphones. T
 |--------|----------------|
 | <audio controls><source src="/papers/girnet/audio/mixture.wav" type="audio/wav"></audio> | <audio controls><source src="/papers/girnet/audio/girnet_output.wav" type="audio/wav"></audio> |
 
+| Mixture | GIRNet Output | xxx | xxx |
+|--------|----------------|----------------|----------------|
+| Data| <audio controls><source src="/papers/girnet/audio/girnet_output.wav" type="audio/wav"></audio> |  <audio controls><source src="/papers/girnet/audio/girnet_output.wav" type="audio/wav"></audio> | <audio controls><source src="/papers/girnet/audio/girnet_output.wav" type="audio/wav"></audio> |
+
 ---
 
 ### Synthetic Examples
@@ -66,14 +70,5 @@ This recording was captured in a live concert scenario with three microphones. T
 
 ---
 
-### Code & Resources
-
-- [GitHub Repository](https://github.com/its-rajesh/girnet)
-- [Paper PDF](/papers/girnet/girnet.pdf)
-- [Author Website](https://its-rajesh.github.io)
-
----
-
-_Last updated: July 2025_
 
 © 2025 Rajesh Rameshbabu
