@@ -6,7 +6,7 @@ author: ["Rajesh R","Padmanabhan Rajan"]
 description: "A graph-based neural network for interference reduction in live multitrack music recordings. Published in xxxx, 2025"
 summary: "This paper presents GIRNet, a neural architecture that learns relationships between audio channels to suppress interference in multitrack music recordings. It accepts direct raw waveforms and generates interference reduced outputs. The network also shows promising generalizability to diverse acoustic environments and instrument sources or genre. Experiments show improved SDR and faster processing compared to existing methods, with promising real-world listening results."
 cover:
-    image: "paper1.png"
+    image: "dfUNetGE.png"
     alt: "GIRNET"
     relative: true
 editPost:
@@ -28,15 +28,10 @@ editPost:
 </div>
 
 <p style="text-align: center;">
-  <a href="https://github.com/its-rajesh/girnet">GitHub</a> | 
-  <a href="/papers/girnet/girnet.pdf">PDF</a>
+  <a href="">Paper</a> | 
+  <a href="https://github.com/its-rajesh/GIRNet">Code and Data</a> |
+  <a href="">Xplore</a>
 </p>
-
-##### Download
-
-+ [Paper](girnet.pdf)
-+ [Code and data](https://github.com/its-rajesh/GIRNet)
-+ [Xplore]()
 
 ---
 ##### ARCHITECTURE
