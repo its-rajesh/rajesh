@@ -3,19 +3,18 @@ title: "GIRNet: Graph-Based Interference Reduction for multitrack music recordin
 date: 2025-07-10
 tags: ["Graph Attention Networks", "interference reduction","music source separation","multi-track recordings","Live data"]
 author: ["Rajesh R","Padmanabhan Rajan"]
-description: "This paper proposed the two neural networks for interference reduction. Published in xxxx, 2025"
-summary: "This paper introduces two neural networks for interference reduction in multi-track recordings: a convolutional autoencoder using time-frequency inputs (interference treated as noise) and a truncated U-Net operating in the time domain (interference reduction based on relationship among multi-track data). Experiments show that both models improve music source separation, with the truncated U-Net delivering superior performance and audio quality."
+description: "A graph-based neural network for interference reduction in live multitrack music recordings. Published in xxxx, 2025"
+summary: "This paper presents GIRNet, a neural architecture that learns relationships between audio channels to suppress interference in multitrack music recordings. It accepts direct raw waveforms and generates interference reduced outputs. The network also shows promising generalizability to diverse acoustic environments and instrument sources or genre. Experiments show improved SDR and faster processing compared to existing methods, with promising real-world listening results."
 cover:
     image: "paper1.png"
-    alt: "IRMR"
+    alt: "GIRNET"
     relative: true
 editPost:
-    URL: "https://www.waspaa.com/waspaa23/"
-    Text: "WASPAA 2023"
+    URL: ""
+    Text: "xxxx 2025"
 
 ---
 
-# GIRNet: Graph-Based Interference Reduction
 
 <div style="display: flex; justify-content: center; gap: 4em; text-align: center; flex-wrap: wrap; margin-bottom: 1em;">
   <div>
@@ -33,9 +32,8 @@ editPost:
   <a href="/papers/girnet/girnet.pdf">PDF</a>
 </p>
 
-<div style="text-align: center;">
-  <img src="/papers/girnet/dfUNetGE.png" alt="GIRNet Architecture" style="max-width: 90%; height: auto;">
-</div>
+![](dfUNetGE.png.png)
+
 
 ### Abstract
 
