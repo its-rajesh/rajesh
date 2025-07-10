@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>GIRNet: Graph-Based Interference Reduction</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 2em auto;
+      max-width: 800px;
+      line-height: 1.6;
+    }
+    h1, h2 {
+      text-align: center;
+    }
+    audio {
+      width: 100%;
+      margin-bottom: 1em;
+    }
+    .columns {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1em;
+      margin-top: 1em;
+    }
+    .column {
+      flex: 1;
+      min-width: 240px;
+    }
+    .caption {
+      font-weight: bold;
+      margin-bottom: 0.2em;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.8em;
+      margin-top: 4em;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+
+<h1>GIRNet: Graph-Based Interference Reduction</h1>
+
+<p style="text-align: center;">
+  <a href="https://its-rajesh.github.io">Rajesh R.</a><br>
+  <a href="https://listening.tech">University of Illinois Chicago</a><br>
+</p>
+
+<p style="text-align: center;">
+  <a href="https://github.com/its-rajesh/girnet">GitHub</a> |
+  <a href="girnet-paper.pdf">[PDF]</a>
+</p>
+
+<p style="text-align: center;">
+  <img src="girnet-diagram.png" alt="GIRNet diagram" width="90%">
+</p>
+
+<h2>Abstract</h2>
+<p>
+We present GIRNet, a neural network for interference reduction in multitrack music recordings. It models multiple channels as nodes in a graph and applies a GAT bottleneck to produce interference-reduced signals from raw waveforms. GIRNet outperforms prior methods in terms of SDR and runtime efficiency, and generalizes well to real-world recordings.
+</p>
+
+<h2>Real Data Audio Demo</h2>
+
+<p>This recording was captured in a live concert scenario with three microphones. The model was trained on semi-realistic data and evaluated on this unseen condition.</p>
+
+<div class="columns">
+  <div class="column">
+    <div class="caption">Mixture</div>
+    <audio controls src="mix.wav"></audio>
+  </div>
+  <div class="column">
+    <div class="caption">GIRNet Output</div>
+    <audio controls src="girnet_output.wav"></audio>
+  </div>
+</div>
+
+<h2>Synthetic Examples</h2>
+<ul>
+  <li><a href="synthetic_3sources.html">Demo with 3 synthetic sources</a></li>
+  <li><a href="synthetic_saraga.html">Evaluation on Saraga Indian Art Music</a></li>
+</ul>
+
+<h2>Code & Resources</h2>
+<ul>
+  <li><a href="https://github.com/its-rajesh/girnet">GitHub Repository</a></li>
+  <li><a href="girnet-paper.pdf">Paper PDF</a></li>
+  <li><a href="https://its-rajesh.github.io/rajesh/">Author Website</a></li>
+</ul>
+
+<footer>
+  Last updated: July 2025
+</footer>
+
+</body>
+</html>
+
