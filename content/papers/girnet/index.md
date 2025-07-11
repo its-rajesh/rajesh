@@ -1,6 +1,6 @@
 ---
-title: "GIRNet: Graph-Based Interference Reduction for Multitrack Music Recordings" 
-date: 2025-07-10
+title: "Graph-Based Interference Reduction for Multitrack Music Recordings" 
+date: 2024-08-10
 tags: ["Graph Attention Networks", "interference reduction","music source separation","multi-track recordings","Live data"]
 author: ["Rajesh R","Padmanabhan Rajan"]
 description: "A graph-based neural network for interference reduction in live multitrack music recordings. Published in xxxx, 2025"
@@ -38,21 +38,14 @@ In live concerts, the microphone that is intended to capture individual sources 
 
 ---
 
-### Real Data Audio Demo
+### Live Recordings Demo
 
-This recording was captured in a live concert scenario with three microphones. The model was trained on semi-realistic data and evaluated on this unseen condition.
+This recording was captured in a live concert scenario with three microphones from the Saraga dataset (Indian Art Music). The model was trained on simulated MUSDB18HQ western pop data and evaluated on this unseen condition.
 
 | Live Recordings | GIRNet Cleaned |
 |-----------------|----------------|
 | <audio controls><source src="/rajesh/audios/girnet/ex1/bvocal.wav" type="audio/wav"></audio> | <audio controls><source src="/rajesh/audios/girnet/ex1/mvocal.wav" type="audio/wav"></audio> |
 | <audio controls><source src="/rajesh/audios/girnet/ex1/bviolin.wav" type="audio/wav"></audio> | <audio controls><source src="/rajesh/audios/girnet/ex1/mviolin.wav" type="audio/wav"></audio> |
 | <audio controls><source src="/rajesh/audios/girnet/ex1/bmridangam.wav" type="audio/wav"></audio> | <audio controls><source src="/rajesh/audios/girnet/ex1/mmridangam.wav" type="audio/wav"></audio> |
-
----
-
-### Synthetic Examples
-
-- [Demo with 3 synthetic sources](/papers/girnet/synthetic-demo/)
-- [Evaluation on Saraga Indian Art Music](/papers/girnet/saraga-eval/)
 
 ---
