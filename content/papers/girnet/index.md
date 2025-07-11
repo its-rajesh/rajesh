@@ -43,10 +43,10 @@ In live concerts, the microphone that is intended to capture individual sources 
 This recording was captured in a live concert scenario with three microphones. The model was trained on semi-realistic data and evaluated on this unseen condition.
 
 | Live Recordings | GIRNet Cleaned |
-|--------|----------------|
-| <audio controls><source src="/audios/girnet/audios/ex1/bvocal.wav" type="audio/wav"></audio> | <audio controls><source src="/audios/girnet/ex1/mvocal.wav" type="audio/wav"></audio> |
-| <audio controls><source src="/audios/girnet/audios/ex1/bviolin.wav" type="audio/wav"></audio> | <audio controls><source src="/audios/girnet/ex1/mviolin.wav" type="audio/wav"></audio> |
-| <audio controls><source src="/audios/girnet/audios/ex1/bmrindangam.wav" type="audio/wav"></audio> | <audio controls><source src="/audios/girnet/ex1/mmridangam.wav" type="audio/wav"></audio> |
+|-----------------|----------------|
+| <audio controls><source src="/audios/girnet/ex1/bvocal.wav" type="audio/wav"></audio> | <audio controls><source src="/audios/girnet/ex1/mvocal.wav" type="audio/wav"></audio> |
+| <audio controls><source src="/audios/girnet/ex1/bviolin.wav" type="audio/wav"></audio> | <audio controls><source src="/audios/girnet/ex1/mviolin.wav" type="audio/wav"></audio> |
+| <audio controls><source src="/audios/girnet/ex1/bmridangam.wav" type="audio/wav"></audio> | <audio controls><source src="/audios/girnet/ex1/mmridangam.wav" type="audio/wav"></audio> |
 
 
 ---
