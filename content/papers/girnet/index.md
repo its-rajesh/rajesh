@@ -58,6 +58,3 @@ This recording was captured in a live concert scenario with three microphones. T
 - [Evaluation on Saraga Indian Art Music](/papers/girnet/saraga-eval/)
 
 ---
-
-
-© 2025 Rajesh Rameshbabu
