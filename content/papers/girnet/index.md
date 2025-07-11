@@ -16,17 +16,6 @@ editPost:
 ---
 
 
-<div style="display: flex; justify-content: center; gap: 4em; text-align: center; flex-wrap: wrap; margin-bottom: 1em;">
-  <div>
-    <a href="https://its-rajesh.github.io">Rajesh R.</a><br>
-    <span>University of Illinois Chicago</span>
-  </div>
-  <div>
-    <a href="https://faculty.iitmandi.ac.in/~padman/">Padmanabhan Rajan</a><br>
-    <span>Indian Institute of Technology Mandi</span>
-  </div>
-</div>
-
 <p style="text-align: center;">
   <a href="">Paper</a> | 
   <a href="https://github.com/its-rajesh/GIRNet">Code and Data</a> |
@@ -57,9 +46,9 @@ This recording was captured in a live concert scenario with three microphones. T
 |--------|----------------|
 | <audio controls><source src="/papers/girnet/audio/mixture.wav" type="audio/wav"></audio> | <audio controls><source src="/papers/girnet/audio/girnet_output.wav" type="audio/wav"></audio> |
 
-| Mixture | GIRNet Output | xxx | xxx |
-|--------|----------------|----------------|----------------|
-| Data| <audio controls><source src="/papers/girnet/audio/girnet_output.wav" type="audio/wav"></audio> |  <audio controls><source src="/papers/girnet/audio/girnet_output.wav" type="audio/wav"></audio> | <audio controls><source src="/papers/girnet/audio/girnet_output.wav" type="audio/wav"></audio> |
+| Mixture | GIRNet Output | xxx |
+|--------|----------------|----------------|
+| Data| <audio controls><source src="/papers/girnet/audio/girnet_output.wav" type="audio/wav"></audio> |  <audio controls><source src="/papers/girnet/audio/girnet_output.wav" type="audio/wav"></audio> | 
 
 ---
 
