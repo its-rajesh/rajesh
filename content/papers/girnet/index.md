@@ -48,7 +48,6 @@ This recording was captured in a live concert scenario with three microphones. T
 | <audio controls><source src="/audios/girnet/ex1/bviolin.wav" type="audio/wav"></audio> | <audio controls><source src="/audios/girnet/ex1/mviolin.wav" type="audio/wav"></audio> |
 | <audio controls><source src="/audios/girnet/ex1/bmridangam.wav" type="audio/wav"></audio> | <audio controls><source src="/audios/girnet/ex1/mmridangam.wav" type="audio/wav"></audio> |
 
-
 ---
 
 ### Synthetic Examples
