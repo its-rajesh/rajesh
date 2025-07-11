@@ -44,9 +44,9 @@ This recording was captured in a live concert scenario with three microphones. T
 
 | Live Recordings | GIRNet Cleaned |
 |--------|----------------|
-| <audio controls><source src="/papers/girnet/audios/ex1/bvocal.wav" type="audio/wav"></audio> | <audio controls><source src="/papers/girnet/ex1/mvocal.wav" type="audio/wav"></audio> |
-| <audio controls><source src="/papers/girnet/audios/ex1/bviolin.wav" type="audio/wav"></audio> | <audio controls><source src="/papers/girnet/ex1/mviolin.wav" type="audio/wav"></audio> |
-| <audio controls><source src="/papers/girnet/audios/ex1/bmrindangam.wav" type="audio/wav"></audio> | <audio controls><source src="/papers/girnet/ex1/mmridangam.wav" type="audio/wav"></audio> |
+| <audio controls><source src="/audios/girnet/audios/ex1/bvocal.wav" type="audio/wav"></audio> | <audio controls><source src="/audios/girnet/ex1/mvocal.wav" type="audio/wav"></audio> |
+| <audio controls><source src="/audios/girnet/audios/ex1/bviolin.wav" type="audio/wav"></audio> | <audio controls><source src="/audios/girnet/ex1/mviolin.wav" type="audio/wav"></audio> |
+| <audio controls><source src="/audios/girnet/audios/ex1/bmrindangam.wav" type="audio/wav"></audio> | <audio controls><source src="/audios/girnet/ex1/mmridangam.wav" type="audio/wav"></audio> |
 
 
 ---
