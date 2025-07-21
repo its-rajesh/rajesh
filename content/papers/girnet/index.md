@@ -42,10 +42,28 @@ In live concerts, the microphone that is intended to capture individual sources 
 
 This recording was captured in a live concert scenario with three microphones from the Saraga dataset (Indian Art Music). The model was trained on simulated MUSDB18HQ western pop data and evaluated on this unseen condition.
 
+##### EXAMPLE 1
+
 | Live Recordings | GIRNet Cleaned |
 |-----------------|----------------|
 | <audio controls><source src="/rajesh/audios/girnet/ex1/bvocal.wav" type="audio/wav"></audio> | <audio controls><source src="/rajesh/audios/girnet/ex1/mvocal.wav" type="audio/wav"></audio> |
 | <audio controls><source src="/rajesh/audios/girnet/ex1/bviolin.wav" type="audio/wav"></audio> | <audio controls><source src="/rajesh/audios/girnet/ex1/mviolin.wav" type="audio/wav"></audio> |
 | <audio controls><source src="/rajesh/audios/girnet/ex1/bmridangam.wav" type="audio/wav"></audio> | <audio controls><source src="/rajesh/audios/girnet/ex1/mmridangam.wav" type="audio/wav"></audio> |
+
+##### EXAMPLE 2
+
+| Live Recordings | GIRNet Cleaned |
+|-----------------|----------------|
+| <audio controls><source src="/rajesh/audios/girnet/ex2/bvocal.wav" type="audio/wav"></audio> | <audio controls><source src="/rajesh/audios/girnet/ex2/mvocal.wav" type="audio/wav"></audio> |
+| <audio controls><source src="/rajesh/audios/girnet/ex2/bviolin.wav" type="audio/wav"></audio> | <audio controls><source src="/rajesh/audios/girnet/ex2/mviolin.wav" type="audio/wav"></audio> |
+| <audio controls><source src="/rajesh/audios/girnet/ex2/bmridangam.wav" type="audio/wav"></audio> | <audio controls><source src="/rajesh/audios/girnet/ex2/mmridangam.wav" type="audio/wav"></audio> |
+
+##### EXAMPLE 3
+
+| Live Recordings | GIRNet Cleaned |
+|-----------------|----------------|
+| <audio controls><source src="/rajesh/audios/girnet/ex3/bvocal.wav" type="audio/wav"></audio> | <audio controls><source src="/rajesh/audios/girnet/ex3/mvocal.wav" type="audio/wav"></audio> |
+| <audio controls><source src="/rajesh/audios/girnet/ex3/bviolin.wav" type="audio/wav"></audio> | <audio controls><source src="/rajesh/audios/girnet/ex3/mviolin.wav" type="audio/wav"></audio> |
+| <audio controls><source src="/rajesh/audios/girnet/ex3/bmridangam.wav" type="audio/wav"></audio> | <audio controls><source src="/rajesh/audios/girnet/ex3/mmridangam.wav" type="audio/wav"></audio> |
 
 ---
