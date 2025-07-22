@@ -19,7 +19,7 @@ editPost:
 <p style="text-align: center;">
   <a href="">Paper</a> | 
   <a href="https://github.com/its-rajesh/GIRNet">Code and Data</a> |
-  <a href="">Xplore</a>
+  <a href="">Web</a>
 </p>
 
 ---
