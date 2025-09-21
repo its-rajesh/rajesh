@@ -1,9 +1,12 @@
 ---
 title: "Others"
-# …keep your existing front matter
+date: 2025-09-21
+hidemeta: true
+description: "Rajesh's other stuffs."
+
 ---
 
-## Play my game 🎮
+## Bored? Play my childhood favourite game! 🎮
 
 <div align="center" style="margin: 1rem 0 1.25rem;">
   <a href="https://its-rajesh.github.io/dealnodeal/" target="_blank" rel="noopener"
@@ -21,5 +24,4 @@ title: "Others"
   </a>
 </div>
 
-*Opens in a new tab.*
 
