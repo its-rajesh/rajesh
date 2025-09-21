@@ -21,9 +21,9 @@ menu:
         #- name: Courses
         #  url: courses/
         #  weight: 3
-        #- name: Data
-        #  url: data/
-        #  weight: 4 
+        - name: Others
+          url: others/
+          weight: 4 
         - name: Blog
           url: https://its-rajesh.github.io/dharmicwaves/
           weight: 6
@@ -70,8 +70,8 @@ params:
             #  url: courses/
             #- name: Tags
             #  url: tags/
-            #- name: Archive
-            #  url: archive/
+            - name: Others
+              url: others/
             - name: Blog
               url: https://its-rajesh.github.io/dharmicwaves/
 
