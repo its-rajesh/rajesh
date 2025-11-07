@@ -1,17 +1,17 @@
 ---
 title: "Distance Based Source Separation" 
-date: 2025-01-01
+date: 2025-10-10
 tags: ["Source separation","Multi-track recordings","Deep learning", "Distance Estimation", "Music Source Separation"]
 author: ["Rajesh R", "Ryan M. Corey"]
 description: "This research focus on the direction of distance based source separation"
-summary: "Current state-of-the-art models, such as Facebook’s Hybrid Transformer Demucs and Band-split RNN, demonstrate strong performance on Western music but struggle with Indian classical music and out-of-domain instrument separation. This performance gap underscores the need for further research into developing source-agnostic and universally robust music source separation models."
+summary: "Distance based multichannel source separation"
 cover:
     image: "cover.png"
-    alt: "Trends"
+    alt: "DBSS"
     relative: true
 editPost:
     URL: ""
-    Text: "Indian Institute of Technology Mandi"
+    Text: "University of Illinois Chicago"
 
 ---
 
@@ -46,15 +46,6 @@ When you move the slider:
   style="border:none; border-radius:12px; box-shadow:0 4px 24px rgba(0,0,0,0.25);"
   loading="lazy"
 ></iframe>
-
-<iframe
-  src="site/index.html"
-  width="100%"
-  height="860"
-  style="border:none; border-radius:12px; box-shadow:0 4px 24px rgba(0,0,0,0.25);"
-  loading="lazy"
-></iframe>
-
 
 
 ---
