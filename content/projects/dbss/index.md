@@ -2,7 +2,7 @@
 title: "Distance Based Source Separation" 
 date: 2025-10-10
 tags: ["Source separation","Multi-track recordings","Deep learning", "Distance Estimation", "Music Source Separation"]
-author: ["Rajesh R", "Ryan M. Corey"]
+author: ["Rajesh R", "Ryan Corey"]
 description: "This research focus on the direction of distance based source separation"
 summary: "Distance based multichannel source separation"
 cover:
@@ -17,28 +17,21 @@ editPost:
 
 ---
 
-## 🎧 Distance-Based Source Separation
+## Distance-Based Source Separation
 
-This project explores **distance-aware source separation** using multichannel arrays.  
-The goal is to learn a *distance mask* that separates near and far sources directly from spatial cues.
 
-Key ideas:
-- Multichannel recordings simulated with varying source distances (1 m, 2.5 m, 4 m)
-- Time–frequency features such as IPD, ILD, ITD, and coherence
-- Distance-conditioned masks that can be “dragged” across thresholds
+In source separation, even defining what a “source” is can be surprisingly tricky. Some define it as broad categories like speech and music, while others think of it as individual instruments, voices, or background noises. But rather than obsessing over the definition itself, I prefer to approach the problem from a more human and practical perspective: what do we actually want to hear?
+
+Imagine sitting in a busy restaurant: surrounded by chatter, clinking plates, and background music; yet all you really want is to clearly hear the person sitting across from you. This simple scenario captures the motivation: to separate sounds based on distance. Instead of fixed labels like “music” or “noise,” I aim to classify sources as near or far, where “near” and “far” are themselves relative and adaptive.
+
+My broader goal is to develop a system that can accurately estimate distance from multichannel recordings and use that information to cleanly separate sources according to spatial proximity. In other words, a model that not only hears what is being said, but also understands where it’s coming from.
 
 ---
 
-### 🧪 Interactive Demo
+### Interactive Demo
 
-The demo below lets you **adjust the distance threshold** (τ) interactively.  
-When you move the slider:
-- The **green overlay** shows the STFT regions dominated by sources within τ meters.
-- The **bottom audio player** plays the “distance-selected” (near) mixture.
-- Everything runs locally in your browser — no uploads.
-
-> 💡 Tip: try τ = 1 m, 2 m, 4 m to hear the progressive separation.
-
+A system like this would be ideal: one that estimates clean sources relative to their distance. You can listen to the multichannel mixture, view the STFT mask, and hear the separated source corresponding to the chosen distance.
+> 💡 Tip: try moving τ = 1 m, 2 m, 4 m to hear the progressive separation.
 
 <iframe
   src="/rajesh/projects/dbss/site/index.html"
@@ -49,23 +42,20 @@ When you move the slider:
 ></iframe>
 
 
-
 ---
 
-### 📖 How It Works
+### Approaches
 
-- **Simulation:** Each source is placed at a different distance/azimuth around a 4-mic array.
-- **Acoustic Model:** Signals are delayed, attenuated, and lightly low-passed to mimic air absorption.
-- **Visualization:** The STFT of mic-0 is shown, with an *ideal* distance mask overlay.
-- **Audio:** The “distance-selected” audio is simply the sum of the original clean sources whose distance ≤ τ.
+- **Feature Conditioning for Distance-Based Separation**  
+  Currently exploring how different feature-conditioning strategies influence distance-based source separation. The aim is to identify which spatial or acoustic cues best help the model distinguish sources by distance.
 
----
+- **Multichannel Distance Estimator Network**  
+  Developed a network that takes multichannel audio as input and predicts the source distance, classifies it as *near* or *far*, and generates a continuous *distance embedding* representing spatial information.  
+  Simulated experiments show excellent initial results — detailed evaluations will be added soon!
 
-### 📂 Resources
-
-- [GitHub Repository](https://github.com/its-rajesh/rajesh)  
-- [Paper / Project Overview](#) (coming soon)
-
+- **Distance-Conditioned Source Separation**  
+  Using the learned distance embedding as a conditioning input to the source separation model, enabling adaptive separation of sources based on their estimated spatial distance.
+  
 ---
 
 
