@@ -17,7 +17,7 @@ editPost:
 
 ### Music Source Separation for Indian Art Music
 
-Music source separation has achieved remarkable success in Western pop music effectively isolating instruments such as vocals, bass, drums, and guitar. However, most state-of-the-art (SOTA) models are designed around these fixed instrument types and struggle to generalize to other musical traditions.
+Music source separation has achieved remarkable success in Western pop music effectively isolating instruments such as vocals, bass, drums, and others. However, most state-of-the-art (SOTA) models are designed around these fixed instrument types and struggle to generalize to other musical traditions.
 In particular, Indian Art Music (IAM), such as Carnatic music, presents a unique challenge: its complex polyphony, tonal structures, and rich harmonic-percussive interplay cause SOTA models to perform poorly.
 
 My goal is to develop a source separation model tailored for the Carnatic domain: one capable of isolating sources such as vocals, mridangam, violin, ghatam, and others.
