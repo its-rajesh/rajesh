@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <title>Distance Mask Demo</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <link rel="stylesheet" href="styles.css"/>
+  <!-- fft.js CDN (MIT) -->
+  <script src="https://cdn.jsdelivr.net/npm/fft.js/dist/fft.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Distance-Mask Demo (Static)</h1>
+    <p class="subtle">
+      Pre-simulated 4-mic mixture. Spectrogram is mic-0 (STFT in browser). Use the slider to set τ (meters).
+      Green overlay = TF bins dominated by sources with distance ≤ τ. The “distance-selected” audio is the
+      sum of clean sources whose distance ≤ τ.
+    </p>
+
+    <section class="panel">
+      <h2>1) Files</h2>
+      <div id="files"></div>
+      <button id="loadBtn">Load assets</button>
+      <span id="status"></span>
+    </section>
+
+    <section class="panel">
+      <h2>2) Spectrogram & Mask</h2>
+      <canvas id="spec" width="1000" height="420"></canvas>
+      <div class="slider-row">
+        <label for="tau">Distance τ: <span id="tauVal">--</span> m</label>
+        <input id="tau" type="range" min="0" max="6" step="0.05" value="2"/>
+      </div>
+      <div class="legend">Green = bins dominated by sources with d ≤ τ</div>
+    </section>
+
+    <section class="panel">
+      <h2>3) Audio</h2>
+      <div class="audio-col">
+        <div>
+          <label>Mixture (mic-0)</label>
+          <audio id="mixAudio" controls></audio>
+        </div>
+        <div>
+          <label>Distance-selected (sum of clean d ≤ τ)</label>
+          <audio id="nearAudio" controls></audio>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <small>All processing runs locally in your browser. No uploads.</small>
+    </footer>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
