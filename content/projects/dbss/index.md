@@ -4,7 +4,7 @@ date: 2025-10-10
 tags: ["Source separation","Multi-track recordings","Deep learning", "Distance Estimation", "Music Source Separation"]
 author: ["Rajesh R", "Ryan Corey"]
 description: "This research focus on the direction of distance based source separation"
-summary: "Distance based multichannel source separation"
+summary: "Exploring how multichannel recordings can be used to estimate source distance and separate sounds based on spatial proximity rather than source type."
 cover:
     image: "dbss.png"
     alt: "DBSS"
