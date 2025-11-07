@@ -51,7 +51,7 @@ A system like this would be ideal: one that estimates clean sources relative to 
 
 - **Multichannel Distance Estimator Network**  
   Developed a network that takes multichannel audio as input and predicts the source distance, classifies it as *near* or *far*, and generates a continuous *distance embedding* representing spatial information.  
-  Simulated experiments show excellent initial results — detailed evaluations will be added soon!
+  Simulated experiments show excellent initial results. Detailed evaluations will be added soon!
 
 - **Distance-Conditioned Source Separation**  
   Using the learned distance embedding as a conditioning input to the source separation model, enabling adaptive separation of sources based on their estimated spatial distance.
