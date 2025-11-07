@@ -40,7 +40,7 @@ When you move the slider:
 > 💡 Tip: try τ = 1 m, 2 m, 4 m to hear the progressive separation.
 
 <iframe
-  src="/projects/dbss/site/index.html"
+  src="/rajesh/content/projects/dbss/site/index.html"
   width="100%"
   height="860"
   style="border:none; border-radius:12px; box-shadow:0 4px 24px rgba(0,0,0,0.25);"
