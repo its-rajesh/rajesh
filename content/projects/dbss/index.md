@@ -6,7 +6,7 @@ author: ["Rajesh R", "Ryan M. Corey"]
 description: "This research focus on the direction of distance based source separation"
 summary: "Distance based multichannel source separation"
 cover:
-    image: "cover.png"
+    image: "dbss.png"
     alt: "DBSS"
     relative: true
 editPost:
