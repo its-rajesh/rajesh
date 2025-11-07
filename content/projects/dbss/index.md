@@ -59,8 +59,6 @@ When you move the slider:
 - **Visualization:** The STFT of mic-0 is shown, with an *ideal* distance mask overlay.
 - **Audio:** The “distance-selected” audio is simply the sum of the original clean sources whose distance ≤ τ.
 
-All code is open-source and runs entirely client-side.
-
 ---
 
 ### 📂 Resources
