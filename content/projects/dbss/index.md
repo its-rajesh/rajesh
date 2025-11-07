@@ -66,7 +66,6 @@ When you move the slider:
 - [GitHub Repository](https://github.com/its-rajesh/rajesh)  
 - [Paper / Project Overview](#) (coming soon)
 
-
 ---
 
 
