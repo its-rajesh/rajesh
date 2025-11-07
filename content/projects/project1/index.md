@@ -30,7 +30,7 @@ Utilized several state-of-the-art architectures such as [HT-Demucs](https://arxi
 
 ##### Dataset Challenge: Microphone Bleed
 Although Saraga provides multitrack recordings, significant bleed (cross-talk between microphones) severely limits source separation performance.
-To address this, my focus shifted toward developing interference-reduction and bleed-mitigation techniques.
+To address this, my focus shifted toward developing interference-reduction or bleed-reduction techniques.
 
 ##### Architectural Experiments
 Designed and tested new time–frequency U-Net architectures that explicitly model harmonic and percussive components. Gradually incorporated instrument-specific pathways: adding and refining sources one by one for improved separation quality.
