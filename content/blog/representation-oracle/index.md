@@ -1,253 +1,265 @@
 ---
 title: "When Does Audio Become Separable?"
 date: 2025-12-19
-tags: ["audio", "source separation", "representations"]
-draft: false
+tags: ["audio", "source separation", "signal representations"]
 ---
 
-# 
-
-## A Representation-Centric Study of Overlap and Oracle Limits
-
-**Rajesh Rameshbabu**
-*Audio Signal Processing, University of Illinois Chicago*
+> *Short answer:* not when sources are sparse.  
+> *Long answer:* keep reading.
 
 ---
 
-## Motivation
+## Why I started thinking about this
 
-Audio source separation is often justified by a simple and intuitive idea:
+In audio source separation, we often repeat a comforting story:
 
-> *If sources are sparse or weakly overlapping in some representation, they can be separated.*
+> “Sources overlap less in the right representation, so we can separate them.”
 
-This assumption underlies classical time–frequency masking, harmonic–percussive separation, and many modern deep-learning systems that operate on spectrograms or learned feature spaces.
+It sounds reasonable.  
+It sounds mathematical.  
+It also sounds like something we’ve all said in talks without questioning too hard.
 
-But a deeper question remains largely unexplored:
+But at some point, I found myself asking a slightly annoying question:
 
-> **Does reduced overlap in a representation actually imply better separability?**
+> **If sparsity is really the reason separation works… why does the time domain fail so badly?**
 
-Or more fundamentally:
+After all, every sample is just a sum of sources. Surely that’s the *most* overlapped place on Earth?
 
-* Is sparsity the real reason separation works?
-* Or do structure, resolution, and invertibility play a larger role?
-
-In this post, we examine these questions through a **controlled oracle experiment**, isolating representation effects from learning, architectures, and optimization.
-
----
-
-## Experimental Setup
-
-### Data and mixtures
-
-We use real musical stems in a MUSDB-style format, each track containing:
-
-* vocals
-* bass
-* drums
-* other instruments
-
-From these, we construct mixtures using:
-
-* within-track pairs (e.g., vocal–drums),
-* cross-track same-instrument pairs (e.g., drums–drums),
-* cross-track mixed-instrument pairs (e.g., vocal–bass).
-
-In total, **102 unique source pairs** are evaluated.
-
-Each mixture follows a **convolutive acoustic model**:
-
-* each source is convolved with a distinct room impulse response,
-* sources are mixed at 0 dB SIR,
-* mild additive noise is added (≈30 dB SNR).
-
-This ensures the analysis reflects **realistic recording conditions**, not instantaneous toy mixtures.
+This blog is the result of poking that question a little too hard.
 
 ---
 
-## Representations Evaluated
+## TL;DR (for impatient readers)
 
-For each mixture, we compute oracle ideal ratio masks in the following representations:
+- Low overlap ≠ good separation  
+- High overlap ≠ bad separation  
+- **Multi-resolution STFT dominates almost everything**
+- Structure + resolution alignment matter more than sparsity
+- The time domain is sparse, honest, and completely unhelpful
 
-* **Time domain** (sample-wise magnitude masking)
-* **STFT** (single resolution)
-* **Multi-resolution STFT (MRSTFT)**
+If you want all the math, figures, and rigor, you can download the full technical report here:
 
-  * best-performing resolution per example
-  * naive ensemble (averaged waveform)
-* **Constant-Q Transform (CQT)**
-* **Discrete Wavelet Transform (DWT)**
-* **Wavelet Packet Transform (WPT)**
-* **Scattering Transform** (overlap analysis only; non-invertible)
-
-All invertible representations are reconstructed using their standard inverse operators.
+📄 **[Download full technical report (PDF)](report.pdf)**
 
 ---
 
-## Metrics
+## What I actually did (no deep learning harmed)
 
-Two complementary metrics are used.
+I deliberately avoided training any model.
 
-### 1. Representation-domain overlap
+No U-Nets.  
+No diffusion.  
+No “our method beats the baseline by 0.3 dB”.
 
-Overlap is quantified using the **Jaccard index** between high-energy coefficient sets of the two sources in a given representation.
+Instead, I asked a simpler question:
 
-This measures how often both sources are simultaneously active in the same representation bins.
+> *If a representation were perfect, how well could it separate sources?*
 
-### 2. Oracle SI-SDR
+So I ran **oracle ideal ratio masking** experiments across different representations.
 
-Using oracle ideal ratio masks, we compute the **scale-invariant signal-to-distortion ratio (SI-SDR)** of the reconstructed target source.
+### Data
 
-Because the masks are oracle, this SI-SDR represents an **upper bound** on how well that representation could support separation.
+I used MUSDB-style music stems:
+- vocals
+- bass
+- drums
+- other
+
+I mixed them in every reasonable way:
+- vocal–drums  
+- vocal–bass  
+- drums–drums (yes, chaos)  
+- cross-track, within-track, everything
+
+In total: **102 mixtures**.
+
+### Important detail (that reviewers care about)
+
+This is **not** instantaneous mixing.
+
+Each source:
+- is convolved with a different room impulse response  
+- is mixed at 0 dB SIR  
+- has a bit of noise added  
+
+So yes — this is closer to reality than the whiteboard equation we all secretly hate.
 
 ---
 
-## Which representation is “best”?
+## Representations I tested
+
+For each mixture, I computed oracle masks in:
+
+- Time domain (sample-wise masking)
+- STFT (single resolution)
+- **Multi-resolution STFT (MRSTFT)**
+  - best resolution per mixture
+  - naive ensemble (averaging waveforms)
+- Constant-Q Transform (CQT)
+- Discrete Wavelet Transform (DWT)
+- Wavelet Packet Transform (WPT)
+- Scattering transform (overlap only — not invertible)
+
+No learning. Just physics and math doing their thing.
+
+---
+
+## First question: which representation actually wins?
 
 ### Best-domain wins
 
 ![Best domain wins](best_domain_hist.png)
 
-The figure above counts how often each representation achieves the **highest oracle SI-SDR** across all mixtures.
+This plot shows how often each representation achieves the **highest oracle SI-SDR**.
 
-**Key observation:**
+**What surprised me (a little):**
+- MRSTFT (best resolution) wins **67 out of 102 cases**
+- Single-resolution STFT does okay
+- Everything else… not really
 
-* **MRSTFT (best resolution)** dominates, winning **67 out of 102** cases.
-* Single-resolution STFT performs well but is clearly inferior.
-* Other representations rarely achieve the top oracle performance.
-
-**Takeaway:**
-No single resolution works universally — but **adapting resolution to the signal consistently wins**.
-
----
-
-## Does lower overlap imply better separation?
-
-### Overlap vs oracle separability
-
-![Overlap vs oracle SI-SDR](scatter_overlap_vs_oracle.png)
-
-This plot directly tests the sparsity intuition by showing oracle SI-SDR versus representation-domain overlap.
-
-If sparsity were sufficient, we would expect:
-
-> lower overlap ⇒ higher separability
-
-This is **not observed**.
-
-Examples:
-
-* Time-domain masking exhibits *low overlap* but *poor separation*.
-* CQT shows *higher overlap* yet outperforms time-domain masking.
-* MRSTFT achieves the **highest oracle SI-SDR** at moderate overlap levels.
-
-**Key result:**
-👉 **Low overlap is neither necessary nor sufficient for good separation.**
-
-This single figure falsifies the notion that sparsity alone explains separation performance.
+**Interpretation:**  
+There is no single “correct” resolution — but picking the *right* one per signal matters a lot.
 
 ---
 
-## Distribution-level evidence
+## Second question: does less overlap mean better separation?
+
+This is where the story gets interesting.
+
+### Overlap vs oracle SI-SDR
+
+![Overlap vs Oracle SI-SDR](scatter_overlap_vs_oracle.png)
+
+If sparsity were the full explanation, this plot should slope nicely upward.
+
+It does not.
+
+Some highlights:
+- Time domain has *very low overlap* and *terrible separation*
+- CQT has *higher overlap* but often separates better
+- MRSTFT casually ignores the sparsity rule and wins anyway
+
+**Conclusion (sorry sparsity):**  
+👉 Low overlap is **neither necessary nor sufficient** for good separation.
+
+This was the point where I stopped trusting one-liners in slide decks.
+
+---
+
+## Let’s look statistically (because anecdotes don’t survive reviews)
 
 ### Oracle SI-SDR distributions
 
 ![Oracle SI-SDR distribution](box_oracle_by_domain.png)
 
-The boxplot above shows oracle SI-SDR distributions across representations.
+Here we see:
+- MRSTFT has the highest median
+- The strongest upper tail
+- And fewer catastrophic failures
 
-Observations:
-
-* MRSTFT has the **highest median** and **strongest upper tail**.
-* Single-resolution STFT is competitive but less consistent.
-* Time-domain and fixed wavelet bases lag significantly.
-
-**Takeaway:**
-MRSTFT does not merely win occasionally — it provides the **strongest and most reliable upper bound**.
+Time domain and fixed wavelets are… consistent, but consistently bad.
 
 ---
 
-## How efficiently does a representation use overlap?
+## A better question: how efficiently is overlap used?
 
-We define a simple efficiency score:
+Instead of asking *how sparse* a representation is, I asked:
 
-[
-\text{Efficiency} = \frac{\text{Oracle SI-SDR}}{\text{Overlap} + \epsilon}
-]
+> *How much separation do I get per unit overlap?*
 
 ### Representation efficiency
 
 ![Representation efficiency](efficiency_by_domain.png)
 
-This reveals a subtle but important insight:
+This figure quietly explains everything:
+- Time domain is sparse but useless
+- STFT uses overlap efficiently
+- MRSTFT uses overlap **best**
+- Fixed wavelets burn overlap without much payoff
 
-* Time-domain representations appear sparse but are **inefficient**.
-* STFT and MRSTFT convert overlap into separation far more effectively.
-* Fixed wavelet bases consume overlap without delivering comparable gains.
-
-**Takeaway:**
-It is not about *having* low overlap — it is about *using* overlap effectively.
+**Moral:**  
+It’s not about avoiding overlap — it’s about surviving it.
 
 ---
 
-## Does this depend on instrument type?
+## Is this just a vocal–drums trick?
 
-### Pair-type × domain analysis
+I checked.
+
+### Pair-type × domain heatmap
 
 ![Pair-type heatmap](heatmap_pairtype_domain_median_sisdr.png)
 
-This heatmap shows median oracle SI-SDR across:
+Across:
+- harmonic–percussive
+- harmonic–harmonic
+- percussive–percussive
+- same-instrument chaos
 
-* vocal–drums
-* vocal–bass
-* drums–bass
-* same-instrument mixtures
+**MRSTFT stays strong everywhere.**
 
-While absolute difficulty varies by pair type, **MRSTFT remains consistently strong across all categories**.
-
-**Takeaway:**
-The conclusions are **not an artifact of a specific instrument pairing**.
+So no — this isn’t a dataset coincidence.
 
 ---
 
-## What did we learn?
+## What this experiment taught me
 
-This study leads to several important conclusions:
+After staring at these plots longer than I’d like to admit:
 
-1. **Physical overlap is unavoidable** in real audio mixtures.
-2. **Sparsity alone does not guarantee separability.**
-3. **Representation structure matters more than overlap magnitude.**
-4. **Resolution alignment dominates representation choice.**
-5. **Adaptive selection outperforms naive fusion.**
-6. Fixed bases require learning or conditioning to compete.
+1. **Overlap is inevitable in audio**
+2. **Sparsity is not the explanation we want it to be**
+3. **Structure + resolution alignment matter more**
+4. **Multi-resolution beats single-resolution almost always**
+5. Naive averaging ≠ intelligence
+6. Fixed bases need learning, conditioning, or both
 
-In short:
+In one sentence:
 
-> **Separation works not because sources are sparse, but because the representation preserves source structure while allowing interference to be attenuated without breaking reconstruction.**
-
----
-
-## Implications for learning-based systems
-
-These results directly motivate:
-
-* multi-resolution losses (e.g., MRSTFT losses),
-* adaptive receptive fields,
-* learned filterbanks,
-* attention or gating across scales.
-
-Rather than enforcing sparsity in a fixed domain, modern models should be designed to **discover where overlap breaks and structure survives**.
+> **Separation works not because sources are sparse, but because the representation preserves source structure while allowing interference to be suppressed without breaking reconstruction.**
 
 ---
 
-## Closing thoughts
+## Why this matters (especially for learning-based models)
 
-This was not a separation-algorithm paper.
+This directly motivates:
+- multi-resolution losses
+- adaptive receptive fields
+- learned filterbanks
+- attention across scales
 
-It was a **representation study**.
+In other words:
 
-By stripping away learning and examining oracle limits, we gain a clearer understanding of *why* certain representations work — and why others fail.
-
-If you are building the next generation of audio models, this is the level at which representation choices deserve scrutiny.
+> Don’t hard-code sparsity.  
+> Let the model discover *where overlap stops being fatal*.
 
 ---
+
+## If you want more details
+
+This blog is the intuition-first version.
+
+For:
+- full math  
+- exact definitions  
+- experimental protocol  
+- additional figures  
+
+📄 **[Download the full technical report (PDF)](report.pdf)**
+
+---
+
+## Closing thought
+
+This wasn’t meant to be a flashy separation paper.
+
+It was a **representation sanity check**.
+
+Sometimes, the most useful thing you can do is ask:
+> *Why does this work at all?*
+
+And then refuse to accept the first easy answer.
+
+---
+
+*— Rajesh*
 
