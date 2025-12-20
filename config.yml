@@ -24,9 +24,9 @@ menu:
         - name: Others
           url: others/
           weight: 4 
-        - name: Dharmicwaves
-          url: https://its-rajesh.github.io/dharmicwaves/
-          weight: 5
+        #- name: Dharmicwaves
+        #  url: https://its-rajesh.github.io/dharmicwaves/
+        #  weight: 5
 
 params:
     description: "This website hosts Rajesh's research papers, books, course materials, data, curriculum vitae, and contact information."
@@ -72,8 +72,8 @@ params:
             #  url: tags/
             - name: Others
               url: others/
-            - name: Dharmicwaves
-              url: https://its-rajesh.github.io/dharmicwaves/
+            #- name: Dharmicwaves
+            #  url: https://its-rajesh.github.io/dharmicwaves/
 
     socialIcons:
         - name: CV
