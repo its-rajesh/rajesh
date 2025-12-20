@@ -18,15 +18,15 @@ menu:
         - name: Papers
           url: papers/
           weight: 1
-        #- name: Courses
-        #  url: courses/
-        #  weight: 3
+        - name: Blog
+          url: blog/
+          weight: 3
         - name: Others
           url: others/
-          weight: 3 
-        - name: Blog
+          weight: 4 
+        - name: Dharmicwaves
           url: https://its-rajesh.github.io/dharmicwaves/
-          weight: 4
+          weight: 5
 
 params:
     description: "This website hosts Rajesh's research papers, books, course materials, data, curriculum vitae, and contact information."
@@ -64,15 +64,15 @@ params:
               url: papers/
             - name: Projects
               url: projects/
-            #- name: Books
-            #  url: books/
+            - name: Blog
+              url: blog/
             #- name: Courses
             #  url: courses/
             #- name: Tags
             #  url: tags/
             - name: Others
               url: others/
-            - name: Blog
+            - name: Dharmicwaves
               url: https://its-rajesh.github.io/dharmicwaves/
 
     socialIcons:
