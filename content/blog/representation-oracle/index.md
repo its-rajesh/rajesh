@@ -39,7 +39,7 @@ This blog is the result of poking that question a little too hard.
 
 If you want all the math, figures, and rigor, you can download the full technical report here:
 
-📄 **[Download full technical report (PDF)](report.pdf)**
+**[Technical Report (PDF)](report.pdf)**
 
 ---
 
@@ -59,11 +59,7 @@ So I ran **oracle ideal ratio masking** experiments across different representat
 
 ### Data
 
-I used MUSDB-style music stems:
-- vocals
-- bass
-- drums
-- other
+I used MUSDB18HQ music stems: vocals, bass, drums, and other.
 
 I mixed them in every reasonable way:
 - vocal–drums  
@@ -82,7 +78,7 @@ Each source:
 - is mixed at 0 dB SIR  
 - has a bit of noise added  
 
-So yes — this is closer to reality than the whiteboard equation we all secretly hate.
+So yes, this is closer to reality than the whiteboard equation we all secretly hate (but still only close, not real! sadly, not adressing non-linearities!).
 
 ---
 
@@ -98,9 +94,9 @@ For each mixture, I computed oracle masks in:
 - Constant-Q Transform (CQT)
 - Discrete Wavelet Transform (DWT)
 - Wavelet Packet Transform (WPT)
-- Scattering transform (overlap only — not invertible)
+- Scattering transform (overlap only, not invertible)
 
-No learning. Just physics and math doing their thing.
+No learning. Just signal processing doing their thing.
 
 ---
 
@@ -118,7 +114,7 @@ This plot shows how often each representation achieves the **highest oracle SI-S
 - Everything else… not really
 
 **Interpretation:**  
-There is no single “correct” resolution — but picking the *right* one per signal matters a lot.
+There is no single “correct” resolution but picking the *right* one per signal matters a lot.
 
 ---
 
@@ -140,7 +136,7 @@ Some highlights:
 - MRSTFT casually ignores the sparsity rule and wins anyway
 
 **Conclusion (sorry sparsity):**  
-👉 Low overlap is **neither necessary nor sufficient** for good separation.
+Low overlap is **neither necessary nor sufficient** for good separation.
 
 This was the point where I stopped trusting one-liners in slide decks.
 
@@ -178,7 +174,7 @@ This figure quietly explains everything:
 - Fixed wavelets burn overlap without much payoff
 
 **Moral:**  
-It’s not about avoiding overlap — it’s about surviving it.
+It’s not about avoiding overlap, it’s about surviving it.
 
 ---
 
@@ -198,7 +194,7 @@ Across:
 
 **MRSTFT stays strong everywhere.**
 
-So no — this isn’t a dataset coincidence.
+So no, this isn’t a dataset coincidence.
 
 ---
 
@@ -244,7 +240,7 @@ For:
 - experimental protocol  
 - additional figures  
 
-📄 **[Download the full technical report (PDF)](report.pdf)**
+**[Technical report (PDF)](report.pdf)**
 
 ---
 
@@ -261,5 +257,5 @@ And then refuse to accept the first easy answer.
 
 ---
 
-*— Rajesh*
+*— Rajesh R*
 
