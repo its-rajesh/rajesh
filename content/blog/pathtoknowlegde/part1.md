@@ -77,7 +77,7 @@ It felt rational. It felt mature. It felt complete. I remember thinking, quietly
 
 ---
 
-![Figure1](p1_1.png)
+![Figure 1](p1_1.png)
 
 ---
 
@@ -108,7 +108,7 @@ At this point, the question is no longer about the universe. It is about the one
 
 ---
 
-![Figure2](p1_2.png)
+![Figure 2](p1_2.png)
 
 
 ---
@@ -117,7 +117,6 @@ At this point, the question is no longer about the universe. It is about the one
 
 This blog does not aim to answer these questions. It does not aim to prove God. It does not aim to reject science. It does not aim to promote any religion. Its purpose is simpler. To suggest that atheism, for many of us, is not the end of intelligence. It is the point where deeper inquiry becomes possible.
 
-In the next part, the questioning does not move outward. It turns inward. Because before asking what truth is,  
-one question refuses to disappear.
+In the next part, the questioning does not move outward. It turns inward. Because before asking what truth is, one question refuses to disappear.
 
 Who is the one asking?
