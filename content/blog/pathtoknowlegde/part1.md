@@ -4,6 +4,8 @@ author: "Rajesh"
 series: "Truth Is Not Belief A Journey of Right Questioning"
 part: 1
 draft: false
+date: 2026-02-07
+tags: ["Wisdom", "Knowledge", "Exisistence"]
 ---
 
 # When Questioning Stops Too Early
@@ -77,9 +79,7 @@ It felt rational. It felt mature. It felt complete. I remember thinking, quietly
 
 ---
 
-### Figure 1  
-*Progress of inquiry up to atheism*  
-(Questioning ourselves → Atheism)
+![Figure1](p1_1.png)
 
 ---
 
@@ -110,9 +110,8 @@ At this point, the question is no longer about the universe. It is about the one
 
 ---
 
-### Figure 2  
-*Inquiry extended to self exploration*  
-(Questioning ourselves → Atheism → Self exploration)
+![Figure2](p1_2.png)
+
 
 ---
 
