@@ -256,6 +256,3 @@ Sometimes, the most useful thing you can do is ask:
 And then refuse to accept the first easy answer.
 
 ---
-
-*— Rajesh R*
-
