@@ -8,8 +8,6 @@ date: 2026-02-07
 tags: ["Wisdom", "Knowledge", "Exisistence"]
 ---
 
-# When Questioning Stops Too Early
-
 Let us begin with questions. Not answers. Not opinions. Just questions.
 
 Why do people suffer?  
