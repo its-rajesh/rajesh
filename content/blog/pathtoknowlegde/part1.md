@@ -77,7 +77,7 @@ It felt rational. It felt mature. It felt complete. I remember thinking, quietly
 
 ---
 
-![Figure 1](p1_1.png)
+![Figure 1](p1i1.png)
 
 ---
 
@@ -108,7 +108,7 @@ At this point, the question is no longer about the universe. It is about the one
 
 ---
 
-![Figure 2](p1_2.png)
+![Figure 2](p1i2.png)
 
 
 ---
