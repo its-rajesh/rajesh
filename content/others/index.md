@@ -7,9 +7,9 @@ description: "Rajesh's other stuffs."
 ---
 
 <div id="others-cta" class="glass-card">
-  <p class="lead">Bored? Play my childhood favourite game! 🎮</p>
+  <p class="lead"></p>
   <a class="glass-btn" href="https://its-rajesh.github.io/dealnodeal/" target="_blank" rel="noopener">
-    ▶️ Play Deal or No Deal
+    Deal or No Deal
   </a>
 </div>
 
