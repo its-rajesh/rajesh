@@ -58,4 +58,4 @@ Rajesh R, R. Fernando, P. Rajan and R. M. Corey, "Bleed No More: Generative Inte
 
 ##### Related material
 
-+ [Poster](rajesh_icassp2026_bleed.pdf)
++ [Poster](ICASSP2026_finalprint.pdf)
