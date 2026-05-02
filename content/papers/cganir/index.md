@@ -33,9 +33,9 @@ Live multitrack recordings often contain microphone bleed, where unintended sour
 
 ---
 
-##### Figure: t-UNet Architecture
+##### Figure: Illustration
 
-![](paper1.png)
+![](illustration.png)
 
 ---
 
@@ -58,4 +58,4 @@ Rajesh R, R. Fernando, P. Rajan and R. M. Corey, "Bleed No More: Generative Inte
 
 ##### Related material
 
-+ [Presentation slides](presentation1.pdf)
++ [Poster](poster.pdf)
