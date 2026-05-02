@@ -1,7 +1,7 @@
 
 ---
 title: "Bleed No More: Generative Interference Reduction for Musical Recordings" 
-date: 2023-09-15
+date: 2026-04-02
 tags: ["interference reduction","music source separation","multi-track recordings","Live data", "Generative models"]
 author: ["Rajesh R", "Rashen Fernando", "Padmanabhan Rajan", "Ryan Corey"]
 description: "This paper proposed the conditional generative neural network for interference reduction. Published in ICASSP, 2026"
@@ -20,8 +20,8 @@ editPost:
 
 ##### Download
 
-+ [Paper](paper1.pdf)
-+ [Code and data](https://github.com/its-rajesh/IRMR)
++ [Paper](paper.pdf)
++ [Code and data](https://github.com/listeningtech/cGANIR/)
 + [Xplore](https://ieeexplore.ieee.org/abstract/document/11460429)
 + [Audio Examples](https://listeningtech.github.io/cGANIR/)
   
