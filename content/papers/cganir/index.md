@@ -7,7 +7,7 @@ author: ["Rajesh R", "Rashen Fernando", "Padmanabhan Rajan", "Ryan Corey"]
 description: "This paper proposed the conditional generative neural network for interference reduction. Published in ICASSP, 2026"
 summary: "This paper introduces conditional generative neural network for interference reduction in multi-track recordings. Instead of training with multichannel input, the proposed network accepts single channel with dominant source and generates the bleed free version."
 cover:
-    image: "paper1.png"
+    image: "illustration.png"
     alt: "cGANIR"
     relative: true
 editPost:
