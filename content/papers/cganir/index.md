@@ -20,7 +20,7 @@ editPost:
 
 ##### Download
 
-+ [Paper](paper.pdf)
++ [Paper](rajesh_icassp2026_bleed.pdf)
 + [Code and data](https://github.com/listeningtech/cGANIR/)
 + [Xplore](https://ieeexplore.ieee.org/abstract/document/11460429)
 + [Audio Examples](https://listeningtech.github.io/cGANIR/)
@@ -58,4 +58,4 @@ Rajesh R, R. Fernando, P. Rajan and R. M. Corey, "Bleed No More: Generative Inte
 
 ##### Related material
 
-+ [Poster](poster.pdf)
++ [Poster](rajesh_icassp2026_bleed.pdf)
