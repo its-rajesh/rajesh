@@ -8,7 +8,7 @@ author: ["Rajesh R", "Rashen Fernando", "Ryan Corey"]
 description: "This paper proposed distance based source separation network. Published in ASA, 2026"
 summary: "Most source separation methods treat audio as signals to be disentangled, ignoring how the physical world shapes what we hear. This work shows that **distance acts as a global structure**, and learning it explicitly can improve multichannel separation"
 cover:
-    image: "illustration.png"
+    image: "intro.png"
     alt: "dbss"
     relative: true
 editPost:
@@ -21,9 +21,9 @@ editPost:
 
 ##### Download
 
-+ [Paper](rajesh_icassp2026_bleed.pdf)
-+ [Code and data](https://github.com/listeningtech/cGANIR/)
-+ [Xplore](https://ieeexplore.ieee.org/abstract/document/11460429)
++ [Paper]()
++ [Code and data]()
++ [Proceedings]()
 
 ---
 
