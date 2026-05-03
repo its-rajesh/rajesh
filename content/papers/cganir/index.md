@@ -24,6 +24,7 @@ editPost:
 + [Code and data](https://github.com/listeningtech/cGANIR/)
 + [Xplore](https://ieeexplore.ieee.org/abstract/document/11460429)
 + [Audio Examples](https://listeningtech.github.io/cGANIR/)
++ [Blog](https://listeningtech.lab.uic.edu/news-stories/bleed-no-more-generative-interference-reduction-for-musical-recordings/)
   
 ---
 
