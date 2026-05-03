@@ -5,8 +5,8 @@ title: "Learning Distance-dependent Spatial Structure For Multichannel Source Se
 date: 2026-03-15
 tags: ["distance estimation","source separation","multichannel"]
 author: ["Rajesh R", "Rashen Fernando", "Ryan Corey"]
-description: "This paper proposed the conditional generative neural network for interference reduction. Published in ICASSP, 2026"
-summary: "This paper introduces conditional generative neural network for interference reduction in multi-track recordings. Instead of training with multichannel input, the proposed network accepts single channel with dominant source and generates the bleed free version."
+description: "This paper proposed distance based source separation network. Published in ASA, 2026"
+summary: "Most source separation methods treat audio as signals to be disentangled, ignoring how the physical world shapes what we hear. This work shows that **distance acts as a global structure**, and learning it explicitly can improve multichannel separation"
 cover:
     image: "illustration.png"
     alt: "dbss"
