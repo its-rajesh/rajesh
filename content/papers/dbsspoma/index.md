@@ -27,8 +27,6 @@ editPost:
 
 ---
 
-## Learning Distance-Dependent Structure for Source Separation
-
 Most source separation models treat audio as if it were just a collection of signals to be disentangled. But in a real room, what we observe is not just a mixture of sources—it is a mixture that has already been shaped by physics.
 
 Before any model sees the signal, distance has already acted on it.
