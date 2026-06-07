@@ -1,124 +1,160 @@
-
-
 ---
-title: "Learning Distance-dependent Spatial Structure For Multichannel Source Separation" 
+title: "Learning Distance-dependent Spatial Structure For Multichannel Source Separation"
 date: 2026-03-15
-tags: ["distance estimation","source separation","multichannel"]
+tags: ["distance estimation", "source separation", "multichannel"]
 author: ["Rajesh R", "Rashen Fernando", "Ryan Corey"]
-description: "This paper proposed distance based source separation network. Published in ASA, 2026"
-summary: "Most source separation methods treat audio as signals to be disentangled, ignoring how the physical world shapes what we hear. This work shows that **distance acts as a global structure**, and learning it explicitly can improve multichannel separation"
+description: "Winner of the POMA Student Paper Competition (ASA 2026). A distance-aware multichannel source separation framework based on learned spatial structure."
+summary: "Winner of the POMA Student Paper Competition (ASA 2026). This work shows that distance acts as a global structure in multichannel audio and that learning it explicitly can improve source separation."
 cover:
     image: "intro.png"
-    alt: "dbss"
+    alt: "Distance-Based Source Separation"
     relative: true
 editPost:
     URL: "https://pubs.aip.org/asa/poma"
     Text: "POMA 2026"
-
 ---
+
+> 🏆 **Winner of the POMA Student Paper Competition (ASA 2026)**
+
+This paper was selected as a winner of the **POMA Student Paper Competition** at the **189th Meeting of the Acoustical Society of America (ASA)** in Honolulu, Hawaii. The award recognizes outstanding student contributions published in *Proceedings of Meetings on Acoustics (POMA)*.
 
 ---
 
 ##### Download
 
 + [Paper]()
-+ [Code and data]()
++ [Code and Data]()
 + [Proceedings]()
 
 ---
 
-Most source separation models treat audio as if it were just a collection of signals to be disentangled. But in a real room, what we observe is not just a mixture of sources. It is a mixture that has already been shaped by physics.
+Most source separation models treat audio as if it were simply a collection of signals to be disentangled. In reality, what reaches a microphone has already been shaped by the physical world. Sound propagates through space, interacts with surfaces, and arrives at different microphones with patterns that depend strongly on geometry.
 
-Before any model sees the signal, distance has already acted on it.
+Among these factors, distance plays a particularly important role.
 
-A source that is far from the microphones is not simply a quieter version of a near source. It is more reverberant, less coherent across channels, and often spectrally altered. A near source, on the other hand, carries stronger direct-path energy and more reliable spatial structure. These changes are not local, they affect the entire signal in a consistent way.
+A source that is far from the microphones is not merely a quieter version of a near source. It is generally more reverberant, exhibits lower spatial coherence, and often undergoes noticeable spectral changes. A near source, in contrast, contains stronger direct-path energy and more reliable spatial structure. These effects are global: they influence the entire observation rather than isolated time-frequency regions.
 
-And yet, most multichannel separation systems do not represent this explicitly. They rely on local cues like interchannel phase and level differences, and expect the model to implicitly figure out the rest. 
+Yet most multichannel source separation systems do not model distance explicitly. They typically rely on local spatial cues such as interchannel phase and level differences and expect the network to discover the underlying structure on its own.
 
 This work started from a simple question:
 
-> What if distance is not just another cue, but a global variable that organizes the entire observation?
+> What if distance is not just another cue, but a latent variable that organizes the entire observation?
 
 ---
 
-## Treating distance as structure
+## Treating Distance as Structure
 
-Instead of trying to estimate distance as an output or ignoring it altogether, we treat it as a latent variable that shapes the signal. The goal is not to predict distance for its own sake, but to learn a representation that captures how distance changes multichannel audio.
+Instead of estimating distance as a standalone output or ignoring it altogether, we treat distance as a latent representation that influences how multichannel audio is observed.
 
-To do this, we separate the problem into two stages.
+The framework consists of two stages.
 
-First, we learn a representation. A network takes multichannel audio and produces a compact embedding that reflects distance-dependent structure. During training, we use distance regression and a simple near–far classification task, but these are only used to guide the representation. What matters is that the embedding organizes signals in a way that reflects how distance affects them. In practice, this structure is quite clean, near and far sources separate in the embedding space, with smooth transitions in between. 
+First, a distance representation network learns an embedding from multichannel audio. During training, distance regression and a near–far classification objective guide the learning process. These tasks are not the final goal; rather, they encourage the embedding to capture distance-dependent acoustic structure.
 
-Second, we use this embedding to guide separation. Instead of feeding it as another input feature, we use feature-wise linear modulation (FiLM) to condition the separator. This allows the embedding to influence the network internally, reshaping intermediate features at multiple layers based on the global distance context.
+The resulting embedding space exhibits meaningful organization. Sources with similar distances tend to cluster together, while near and far sources become clearly separated with smooth transitions between them.
 
-The separator is no longer working blindly. It has a sense of whether it is dealing with a near source, a far source, or a mixture of both, and can adjust its behavior accordingly.
+Second, the learned embedding is used to condition a source separation network. Rather than appending the embedding to the input, we employ Feature-wise Linear Modulation (FiLM) layers that modulate intermediate representations throughout the separator. This allows the model to adapt its internal processing according to the estimated distance context.
 
----
-
-## Why this helps
-
-Distance affects several acoustic properties at once: overall level, the balance between direct and reverberant energy, and the spatial coherence across microphones. These are tightly coupled effects, not independent features. 
-
-Handcrafted cues like ILD, IPD, or DRR try to capture pieces of this behavior. But they remain local and often unstable in reverberant conditions. What the learned embedding does instead is integrate these effects into a single, consistent representation.
-
-This turns out to matter more than expected.
+As a result, the separator no longer operates without context. It can adjust its behavior depending on whether the dominant source is near, far, or part of a mixed spatial configuration.
 
 ---
 
-## What we observe
+## Why Distance Matters
 
-We evaluated this idea in a controlled setting using simulated reverberant mixtures with two sources placed at different distances from the array. The setup allows us to isolate distance-related effects without other confounding factors.
+Distance simultaneously affects several acoustic properties:
 
-Across different room conditions and array geometries, a consistent pattern emerges. A standard multichannel separator already performs reasonably well. Adding handcrafted spatial features improves it slightly. But conditioning on the learned distance embedding improves it further by roughly 2 to 3 dB in SI-SDR in near–far scenarios. 
+- Overall signal level
+- Direct-to-reverberant ratio (DRR)
+- Spatial coherence across microphones
+- Spectral coloration caused by propagation
 
-The gains are most noticeable for near sources, where strong direct-path structure can be exploited more effectively. Far sources also benefit, though to a lesser extent, as reverberation limits the reliability of spatial cues.
+Traditional handcrafted features such as ILD, IPD, and DRR attempt to capture individual aspects of this behavior. While useful, they often provide only partial information and can become unreliable in reverberant environments.
 
-What is more interesting than the numbers is how the model changes internally. When conditioned on distance, it tends to emphasize coherent, high-DRR features for near sources, and shifts toward more diffuse, robust representations for far sources. This aligns with acoustic intuition, but here it is learned rather than imposed.
+The learned embedding instead integrates these effects into a single representation that reflects the overall acoustic structure associated with distance.
 
----
-
-## A different way to think about separation
-
-This work suggests a shift in perspective.
-
-We often think of separation as a purely signal-level problem: given a mixture, recover its components. But in realistic environments, the mixture already carries structure imposed by the scene. Distance is one of the most dominant factors shaping that structure.
-
-If the model is aware of this structure, even implicitly through an embedding, it can adapt its behavior in a way that simple feature engineering cannot match.
-
-In that sense, the improvement does not come from a more complex separator, but from giving the model the right context.
+This turns out to be more powerful than relying solely on handcrafted spatial cues.
 
 ---
 
-## What’s missing
+## Experimental Evaluation
 
-There are still important gaps. In this work, we use oracle distance embeddings to isolate the effect of conditioning itself. Real systems would need to infer this information directly from mixtures. We also restrict the problem to two sources in a near–far configuration, which is a simplification of more complex scenes.
+We evaluated the proposed framework using simulated reverberant environments containing two simultaneously active sources positioned at different distances from a microphone array.
 
-Extending this to mixture-only inference, multiple sources, and real recordings is the next step.
+The experimental design intentionally isolates distance-related effects so that the contribution of distance-aware conditioning can be studied directly.
+
+Across multiple room configurations and source placements, a consistent trend emerges:
+
+1. A baseline multichannel separator provides reasonable performance.
+2. Adding handcrafted spatial features yields modest gains.
+3. Conditioning the separator with the learned distance embedding produces additional improvements, typically around **2–3 dB SI-SDR** in near–far scenarios.
+
+The largest improvements occur for near sources, where strong direct-path information provides reliable spatial structure. Far sources also benefit, although the gains are generally smaller due to increased reverberation.
+
+Beyond numerical improvements, analysis of the learned representations suggests that the network adapts its internal processing strategy according to distance. For near sources, the model emphasizes coherent, high-DRR components. For far sources, it shifts toward representations that are more robust to diffuse reverberation.
+
+These behaviors emerge naturally from the learning process rather than being manually engineered.
 
 ---
 
-## Closing thought
+## A Different Perspective on Source Separation
 
-Distance is usually treated as something to estimate, or something to ignore.
+Source separation is often framed as a signal processing problem: given a mixture, recover its constituent sources.
 
-This work takes a different view:
+However, realistic acoustic mixtures already contain information about the physical scene in which they were recorded. Distance is one of the strongest factors shaping that scene structure.
 
-> distance is part of the structure of the signal itself.
+By explicitly modeling distance-dependent structure, even through a learned latent representation, the separator gains access to contextual information that would otherwise remain implicit.
 
-And if we model that structure explicitly, even indirectly, it changes how separation works.
+In this view, performance improvements arise not from increasing model complexity, but from providing the network with a more meaningful representation of the acoustic environment.
 
 ---
 
+## Current Limitations
+
+Several challenges remain.
+
+In this study, oracle distance labels are used during training to investigate the effect of distance-aware conditioning in isolation. Practical systems must ultimately infer this information directly from mixtures.
+
+The experiments also focus on two-source near–far configurations. Extending the framework to multiple simultaneous sources, more complex geometries, and real-world recordings remains an important direction for future work.
+
+---
+
+## Closing Thoughts
+
+Distance is often treated as either a nuisance parameter or a quantity to estimate separately.
+
+This work explores a different perspective:
+
+> Distance is part of the structure of the signal itself.
+
+When that structure is learned and incorporated into the separation process, the network gains a richer understanding of the acoustic scene and can separate sources more effectively.
+
+---
+
+## 🏆 Award Recognition
+
+This work was recognized as a **winner of the POMA Student Paper Competition (ASA 2026)**. The paper was selected for its contribution toward incorporating distance-dependent spatial structure into multichannel source separation and highlights the growing importance of geometry-aware learning in audio signal processing.
+
+---
 
 ##### Citation
 
-Rajesh R, R. Fernando, and R. M. Corey, "Learning distance-dependent spatial structure for multichannel source separation," POMA 2026 - Proceedings of Meetings on Acoustics (POMA), Sixth Joint Meeting Acoustical Society of America and Acoustical Society of Japan, Honolulu, Hawaii.
+Rajesh R, R. Fernando, and R. M. Corey,
+
+*"Learning Distance-dependent Spatial Structure for Multichannel Source Separation,"*
+
+Proceedings of Meetings on Acoustics (POMA), Sixth Joint Meeting of the Acoustical Society of America and the Acoustical Society of Japan, Honolulu, Hawaii, 2026.
+
+🏆 **Winner, POMA Student Paper Competition (ASA 2026)**
 
 ```BibTeX
-
+@inproceedings{rajesh2026dbss,
+  title={Learning Distance-dependent Spatial Structure for Multichannel Source Separation},
+  author={Rajesh R and Rashen Fernando and Ryan M. Corey},
+  booktitle={Proceedings of Meetings on Acoustics (POMA)},
+  year={2026},
+  organization={Acoustical Society of America},
+  note={Winner, POMA Student Paper Competition}
+}
 ```
-
----
 
 ##### Related material
 
