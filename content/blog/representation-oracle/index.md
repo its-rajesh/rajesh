@@ -37,8 +37,6 @@ This blog is the result of poking that question a little too hard.
 - Structure + resolution alignment matter more than sparsity
 - The time domain is sparse, honest, and completely unhelpful
 
-If you want all the math, figures, and rigor, you can download the full technical report here:
-
 **[Technical Report (PDF)](report.pdf)**
 
 ---
@@ -227,20 +225,6 @@ In other words:
 
 > Don’t hard-code sparsity.  
 > Let the model discover *where overlap stops being fatal*.
-
----
-
-## If you want more details
-
-This blog is the intuition-first version.
-
-For:
-- full math  
-- exact definitions  
-- experimental protocol  
-- additional figures  
-
-**[Technical report (PDF)](report.pdf)**
 
 ---
 
