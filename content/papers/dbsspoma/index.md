@@ -129,12 +129,6 @@ When that structure is learned and incorporated into the separation process, the
 
 ---
 
-## 🏆 Award Recognition
-
-This work was recognized as a **winner of the POMA Student Paper Competition (ASA 2026)**. The paper was selected for its contribution toward incorporating distance-dependent spatial structure into multichannel source separation and highlights the growing importance of geometry-aware learning in audio signal processing.
-
----
-
 ##### Citation
 
 Rajesh R, R. Fernando, and R. M. Corey,
@@ -162,4 +156,4 @@ Proceedings of Meetings on Acoustics (POMA), Sixth Joint Meeting of the Acoustic
 
 ##### Related material
 
-+ [PPT](ASA2025.pdf)
++ [PPT]()
