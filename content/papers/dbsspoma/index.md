@@ -143,19 +143,23 @@ Rajesh R, R. Fernando, and R. M. Corey,
 
 Proceedings of Meetings on Acoustics (POMA), Sixth Joint Meeting of the Acoustical Society of America and the Acoustical Society of Japan, Honolulu, Hawaii, 2026.
 
-🏆 **Winner, POMA Student Paper Competition (ASA 2026)**
 
 ```BibTeX
-@inproceedings{rajesh2026dbss,
-  title={Learning Distance-dependent Spatial Structure for Multichannel Source Separation},
-  author={Rajesh R and Rashen Fernando and Ryan M. Corey},
-  booktitle={Proceedings of Meetings on Acoustics (POMA)},
-  year={2026},
-  organization={Acoustical Society of America},
-  note={Winner, POMA Student Paper Competition}
-}
+@article{10.1121/2.0002298,
+    author = {Rameshbabu, Rajesh and Fernando, Rashen and Corey, Ryan},
+    title = {Learning distance-dependent spatial structure for multichannel source separation},
+    journal = {Proceedings of Meetings on Acoustics},
+    volume = {60},
+    number = {1},
+    pages = {055004},
+    year = {2026},
+    month = {06},
+    issn = {1939-800X},
+    doi = {10.1121/2.0002298},
+    url = {https://doi.org/10.1121/2.0002298},
+    eprint = {https://pubs.aip.org/asa/poma/article-pdf/doi/10.1121/2.0002298/21049883/055004_1_2.0002298.pdf}
 ```
 
 ##### Related material
 
-+ [PPT]()
++ [PPT](ASA2025.pdf)
