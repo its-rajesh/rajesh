@@ -131,11 +131,7 @@ When that structure is learned and incorporated into the separation process, the
 
 ##### Citation
 
-Rajesh R, R. Fernando, and R. M. Corey,
-
-*"Learning Distance-dependent Spatial Structure for Multichannel Source Separation,"*
-
-Proceedings of Meetings on Acoustics (POMA), Sixth Joint Meeting of the Acoustical Society of America and the Acoustical Society of Japan, Honolulu, Hawaii, 2026.
+Rajesh Rameshbabu, Rashen Fernando, Ryan Corey; Learning distance-dependent spatial structure for multichannel source separation. Proc. Mtgs. Acoust. 1 December 2025; 60 (1): 055004. https://doi.org/10.1121/2.0002298
 
 
 ```BibTeX
