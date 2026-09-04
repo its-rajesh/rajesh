@@ -56,7 +56,7 @@ params:
           enabled: true
           title: Rajesh Rameshbabu
           subtitle: "I am a PhD scholar in the Listening Technology Lab at the University of Illinois Chicago, USA, working under the supervision of Prof. Ryan Corey. My research focuses on audio signal processing, machine learning, and deep learning. I earned my MS by Research from IIT Mandi, India, with a reseach focus on interference reduction and source separation."
-          imageUrl: "img1.png"
+          imageUrl: "img1.jpeg"
           imageWidth: 160
           imageHeight: 160
           buttons:
