@@ -18,7 +18,8 @@ editPost:
 ##### Download
 
 + [Paper](IWAENC2026_Rajesh.pdf)
-+ [Code and data](#)
++ [Demo](https://listeningtech.github.io/restaurant_asn/)
++ [Code and data](https://github.com/listeningtech/restaurant_asn/tree/main/code)
 + [Poster](IWAENC2026_Poster.pdf)
 
 ---
