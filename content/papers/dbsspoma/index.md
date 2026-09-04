@@ -22,6 +22,7 @@ This paper was selected as a winner of the **POMA Student Paper Competition** at
 
 ##### Download
 
++ [Podcast](https://www.buzzsprout.com/1537384/episodes/19712742)
 + [Paper](POMA2026.pdf)
 + [Code and Data]()
 + [Proceedings](https://pubs.aip.org/asa/poma/article/60/1/055004/3396022/Learning-distance-dependent-spatial-structure-for)
