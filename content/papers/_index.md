@@ -7,6 +7,12 @@ description: "Published research papers by Rajesh Rameshbabu."
   <p class="papers-kicker">PUBLICATIONS</p>
   <h1>Research papers and proceedings.</h1>
   <p class="papers-lead">Published work spanning interference reduction, distance-aware source separation, cooperative acoustic sensor networks, spatial audio, and room acoustics. Each entry links to a page with the paper, code, demos, and supporting material where available.</p>
+  <div class="venue-summary" aria-label="Publication venues">
+    <span>ICASSP 2026</span>
+    <span>IWAENC 2026 · 2 papers</span>
+    <span>POMA 2026 · 2 papers</span>
+    <span>WASPAA 2023</span>
+  </div>
 </div>
 
 <div class="publication-timeline">
@@ -61,12 +67,10 @@ description: "Published research papers by Rajesh Rameshbabu."
   </div>
 </a>
 
-<div class="pub-year"><span>2025</span></div>
-
 <a class="pub-entry pub-award" href="dbsspoma/">
   <div class="pub-dot"></div>
   <div class="pub-card">
-    <div class="pub-topline"><span class="pub-venue">Proceedings of Meetings on Acoustics · 2025</span><span class="pub-type">🏆 Student Paper Competition Winner</span></div>
+    <div class="pub-topline"><span class="pub-venue">Proceedings of Meetings on Acoustics · 2026</span><span class="pub-type">🏆 Student Paper Competition Winner</span></div>
     <h2>Learning Distance-dependent Spatial Structure For Multichannel Source Separation</h2>
     <p class="pub-authors"><strong>Rajesh Rameshbabu</strong>, Rashen Fernando, Ryan Corey</p>
     <p class="pub-affiliation">Listening Technology Lab · University of Illinois Chicago</p>
