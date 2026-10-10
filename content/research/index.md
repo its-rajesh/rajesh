@@ -16,39 +16,43 @@ url: "/research/"
 </div>
 
 <div class="research-map" aria-label="Overview of Rajesh Rameshbabu's research">
-  <div class="map-node map-scene">
+  <a class="map-node map-scene" href="#01--recovering-sound">
     <span class="map-label">OBSERVE</span>
     <strong>Real acoustic scene</strong>
     <small>sources · rooms · microphones · interference</small>
-  </div>
+  </a>
 
   <div class="map-connector"><span></span></div>
 
   <div class="map-grid">
-    <div class="map-node map-theme">
+    <a class="map-node map-theme map-recover" href="#01--recovering-sound">
       <span class="map-number">01</span>
       <strong>Recover sound</strong>
-      <small>separation · interference reduction · dereverberation</small>
-    </div>
-    <div class="map-node map-theme">
+      <small>separation · bleed reduction · dereverberation · DRC</small>
+      <em>Explore →</em>
+    </a>
+    <a class="map-node map-theme map-space" href="#02--understanding-acoustic-space">
       <span class="map-number">02</span>
       <strong>Understand space</strong>
       <small>distance · direction · spatial structure</small>
-    </div>
-    <div class="map-node map-theme">
+      <em>Explore →</em>
+    </a>
+    <a class="map-node map-theme map-network" href="#03--distributed-listening">
       <span class="map-number">03</span>
       <strong>Listen together</strong>
       <small>sensor networks · compact spatial representations</small>
-    </div>
+      <em>Explore →</em>
+    </a>
   </div>
 
   <div class="map-connector"><span></span></div>
 
-  <div class="map-node map-measure">
+  <a class="map-node map-measure" href="#04--measuring-what-matters">
     <span class="map-label">EVALUATE ACROSS ALL THREE</span>
     <strong>Measure what matters</strong>
     <small>fidelity · robustness · perceptual relevance</small>
-  </div>
+    <em>Explore →</em>
+  </a>
 </div>
 
 <div class="research-principle">
@@ -60,9 +64,18 @@ url: "/research/"
 
 <div class="research-section">
   <p class="research-summary"><strong>Real recordings are mixtures created by acoustic propagation—not merely sums of clean signals.</strong></p>
-  <p>I develop methods for recovering desired sources when recordings contain competing speakers or instruments, microphone bleed, reverberation, and other interference. A recurring question in this work is which signal representation exposes the useful structure of the problem most clearly to a learning system.</p>
-  <div class="research-tags"><span>Source separation</span><span>Bleed reduction</span><span>Learned representations</span><span>Inverse problems</span></div>
-  <p class="research-link"><a href="../projects/">Related projects →</a><a href="../papers/">Selected papers →</a></p>
+  <p>I develop methods for recovering desired sources when recordings contain competing speakers or instruments, microphone bleed, reverberation, and other interference. A recurring question in this work is which signal representation exposes the useful structure of the problem most clearly to a learning system. I also study whether source separation is always necessary before downstream processing, including <strong>multi-source dynamic range compression</strong>.</p>
+  <div class="research-tags"><span>Source separation</span><span>Bleed reduction</span><span>Learned representations</span><span>Inverse problems</span><span>Dynamic range compression</span></div>
+
+  <div class="work-grid">
+    <a class="work-card" href="../papers/cganir/"><strong>cGANIR</strong><small>Learning-based interference reduction for multitrack music</small><span>Paper →</span></a>
+    <a class="work-card" href="../papers/girnet/"><strong>GIRNet</strong><small>Graph-informed interference reduction and source separation</small><span>Paper →</span></a>
+    <a class="work-card" href="../papers/paper2/"><strong>MS Thesis</strong><small>Interference reduction and source separation in music recordings</small><span>Thesis →</span></a>
+    <a class="work-card" href="../papers/paper1/"><strong>WASPAA Bleed Reduction</strong><small>Learning-based reduction of microphone bleed in live multitrack recordings</small><span>Paper →</span></a>
+    <a class="work-card" href="../projects/project2/"><strong>Music Bleed Reduction</strong><small>Project page collecting interference-reduction work</small><span>Project →</span></a>
+    <a class="work-card" href="../projects/project1/"><strong>Music Source Separation</strong><small>Source separation for Indian Art Music and multitrack recordings</small><span>Project →</span></a>
+    <div class="work-card work-card-static"><strong>Multi-source Dynamic Range Compression</strong><small>Studying when source separation is—and is not—necessary for downstream DRC</small><span>Ongoing work</span></div>
+  </div>
 </div>
 
 ## 02 · Understanding acoustic space
@@ -71,6 +84,11 @@ url: "/research/"
   <p class="research-summary"><strong>A useful listening system should infer not only <em>what</em> is sounding, but also <em>where it is, how far away it is, and how the environment transformed it</em>.</strong></p>
   <p>I study distance, direction, inter-channel structure, acoustic intensity, first-order ambisonics, and other spatial cues. The broader goal is to build spatial representations that improve separation and scene understanding while remaining grounded in array physics and robust across rooms and microphone geometries.</p>
   <div class="research-tags"><span>Distance-aware separation</span><span>Spatial features</span><span>Direction of arrival</span><span>FOA / intensity</span><span>Acoustic vector sensors</span></div>
+
+  <div class="work-grid">
+    <a class="work-card" href="../projects/dbss/"><strong>Distance-based Source Separation</strong><small>Project page for distance-aware multichannel source separation</small><span>Project →</span></a>
+    <a class="work-card" href="../papers/dbsspoma/"><strong>Distance-dependent Spatial Structure</strong><small>Learning spatial structure for multichannel source separation</small><span>Paper →</span></a>
+  </div>
 </div>
 
 ## 03 · Distributed listening
@@ -79,6 +97,10 @@ url: "/research/"
   <p class="research-summary"><strong>What is the smallest amount of acoustic information that sensors must exchange to listen cooperatively?</strong></p>
   <p>Distributed arrays can observe the same scene from many locations, but transmitting raw multichannel audio is expensive. I study distributed source separation and compact spatial representations that retain useful scene information while reducing communication bandwidth.</p>
   <div class="research-tags"><span>Acoustic sensor networks</span><span>DANSE</span><span>Low-bandwidth features</span><span>Distributed arrays</span></div>
+
+  <div class="work-grid">
+    <a class="work-card" href="../papers/asnrest/"><strong>Distributed Acoustic Sensor Networks</strong><small>Collaborative source separation with spatially distributed microphone arrays</small><span>Paper →</span></a>
+  </div>
 </div>
 
 ## 04 · Measuring what matters
@@ -96,6 +118,6 @@ url: "/research/"
 
 ## Toward scene-aware machine listening
 
-My longer-term goal is to build listening systems that combine these capabilities rather than solving each task independently: systems that develop a useful internal representation of an acoustic scene and can reuse it for separation, localization, distance reasoning, enhancement, and other downstream audio tasks.
+My longer-term goal is to build listening systems that combine these capabilities rather than solving each task independently: systems that develop a useful internal representation of an acoustic scene and can reuse it for separation, localization, distance reasoning, enhancement, dynamic range processing, and other downstream audio tasks.
 
-<p class="research-footer-links"><a href="../projects/">Projects</a><span>·</span><a href="../papers/">Papers</a><span>·</span><a href="../blog/">Research notes</a></p>
+<p class="research-footer-links"><a href="../projects/">Projects</a><span>·</span><a href="../papers/">Papers</a><span>·</span><a href="../blog/">Blog</a></p>
