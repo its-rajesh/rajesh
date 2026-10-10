@@ -1,10 +1,10 @@
 ---
-title: "Music Bleed or Interference Reduction" 
+title: "Interference & Bleed Reduction"
 date: 2025-05-27
 tags: ["interference reduction","music source separation","multi-track recordings","Live data"]
 author: ["Rajesh R", "Padmanabhan Rajan", "Ryan Corey"]
-description: "This project aims to reduce the bleeding effects in the recorded microphone recordings"
-summary: "Various methods from optimisation and learning based models were introduced for the task of interference or bleeding reduction in live multi-track recordings."
+description: "A research program on reducing microphone bleed and interference in live multitrack recordings."
+summary: "From optimization and waveform models to graph networks, conditional generative models, and learnable front ends for live multitrack interference reduction."
 cover:
     image: "cover.png"
     alt: "Bleeding"
@@ -12,114 +12,54 @@ cover:
 editPost:
     URL: ""
     Text: "Indian Institute of Technology Mandi and University of Illinois Chicago"
-
 ---
 
----
+<div class="project-program-page">
 
-##### Summary
+<div class="program-page-hero program-ir">
+  <span class="program-index">01</span>
+  <p class="projects-kicker">INTERFERENCE & BLEED REDUCTION</p>
+  <h1>Recovering clean sources from live multitrack recordings.</h1>
+  <p class="projects-lead">Live recordings are rich sources of musical data, but each microphone often contains substantial bleed from nearby performers. My goal is to recover the intended source on each track while preserving its timbre and musical content.</p>
+</div>
 
-Creating extensive datasets for training source separation models is a time-consuming and resource-intensive task, often requiring acoustically isolated recording environments for each source. While there is a wealth of available live recordings, they cannot be directly utilized for training such models due to the presence of significant bleeding effects. Bleeding refers to the undesired pickup of sound from sources other than the intended one, complicating the task of source separation.
+<div class="program-question-grid">
+  <div><span>Problem</span><p>Simultaneous live recording produces microphone bleed, crosstalk, reverberation, and other interference. Those contaminated tracks are poor supervision for downstream source-separation systems.</p></div>
+  <div><span>Goal</span><p>Build practical interference-reduction systems that exploit relationships among the available microphone recordings and generalize from simulated mixtures to real live music.</p></div>
+  <div><span>What I did</span><p>I developed a progression of signal-processing and learning-based approaches, moving from source-specific TF models to multichannel waveform models, graph-based relational models, conditional generative models, and learnable front ends.</p></div>
+</div>
 
----
+## Methods developed
 
-## Approaches
+<div class="method-timeline">
 
-### Learning free optimisation algorithm
+<div class="method-item"><span>01</span><div><h3>Convolutional Autoencoder (CAE)</h3><p>Treats bleed as additive noise in the STFT-magnitude domain. Separate models are trained for individual stems.</p><small>Strength: simple and fast. Limitation: source-specific models and input-phase reconstruction.</small><a href="../../papers/paper1/">Associated paper →</a></div></div>
 
-We propose a optimization-based technique that iteratively estimates the extent of interference (bleed) between sources and derives clean, interference-free signals from raw time-domain multi-source recordings. These bleed-reduced outputs are used as high-quality training targets for large-scale source separation models. Experiments show that this method significantly outperforms prior spectrogram-based approaches, particularly in terms of Source-to-Distortion Ratio (SDR) and perceptual sound quality.
+<div class="method-item"><span>02</span><div><h3>Learning-free optimization</h3><p>Explicitly models the multitrack recording with an interference matrix and iteratively estimates both the cleaned sources and bleed strengths.</p><small>Strength: interpretable and very strong in ideal linear mixtures. Limitation: iterative and restricted to instantaneous mixing assumptions.</small><a href="../../papers/paper2/">MS thesis →</a></div></div>
 
+<div class="method-item"><span>03</span><div><h3>Truncated U-Net (t-UNet)</h3><p>Replaces iterative optimization with a waveform neural network that learns relationships among microphone recordings and predicts interference-reduced outputs.</p><small>Strength: substantially faster inference and better SDR than the earlier CAE/KAMIR baselines in the simulated setting.</small><a href="../../papers/paper1/">Associated paper →</a></div></div>
 
-- Pros: Achieves high SDR performance; produces high-fidelity targets for training.
-- Cons: Assumes instantaneous mixing, which limits real-world applicability; slow due to iterative nature.
+<div class="method-item"><span>04</span><div><h3>GIRNet</h3><p>Extends the waveform approach to reverberant and nonlinear conditions using graph attention. Microphone/source tracks are modeled as graph nodes and their dependencies guide the separator.</p><small>Strength: stronger cross-source relational modeling and promising out-of-domain behavior on live recordings.</small><a href="../../papers/girnet/">Associated paper →</a></div></div>
 
-###### Download
+<div class="method-item"><span>05</span><div><h3>cGANIR</h3><p>A conditional generative model that takes a single contaminated track and generates a bleed-reduced version, avoiding the need for multichannel inference at test time.</p><small>Published at ICASSP 2026.</small><a href="../../papers/cganir/">Associated paper →</a></div></div>
 
-+ [Paper]()
-+ [Code and Data](https://github.com/its-rajesh/Audio-Bleeding-Removal)
-+ [Audio Samples](https://sites.google.com/view/inmir/)
+<div class="method-item"><span>06</span><div><h3>Learnable wavelet front end (LDWT)</h3><p>Uses an end-to-end learnable discrete wavelet transform front end with a subband separator so the representation itself can adapt to the bleed-reduction task while maintaining reconstruction regularity.</p><small>Ongoing journal work.</small></div></div>
 
----
+</div>
 
-### Convolutional Autoencoders
+## Research progression
 
-Assuming interference behaves like additive noise, a simple convolutional autoencoder (CAE) is trained separately for each source. The model performs well on both instantaneous and convolutive mixtures, producing clean outputs with competitive SDR values.
+<div class="progression-strip"><span>STFT magnitude</span><b>→</b><span>Explicit mixing model</span><b>→</b><span>Waveform learning</span><b>→</b><span>Graph relationships</span><b>→</b><span>Generative single-channel inference</span><b>→</b><span>Learnable representation</span></div>
 
-- Pros: Effective for convolutive mixtures; fast training; low computational cost.
-- Cons: Requires a dedicated CAE per source; phase information is not preserved.
- 
-###### Download
+## Key associated work
 
-+ [Paper](https://ieeexplore.ieee.org/document/10248133)
-+ [Code and Data]( https://github.com/its-rajesh/IRMR/)
-+ [Audio Samples](https://sites.google.com/view/inmir/)
+<div class="work-grid">
+  <a class="work-card" href="../../papers/paper2/"><strong>MS Thesis</strong><small>Interference Reduction in Microphone Recordings for Music Source Separation</small><span>Thesis →</span></a>
+  <a class="work-card" href="../../papers/paper1/"><strong>WASPAA 2023</strong><small>Neural Networks for Interference Reduction in Multi-Track Recordings</small><span>Paper →</span></a>
+  <a class="work-card" href="../../papers/girnet/"><strong>GIRNet</strong><small>Graph-Based Interference Reduction for Multitrack Music Recordings</small><span>Paper →</span></a>
+  <a class="work-card" href="../../papers/cganir/"><strong>ICASSP 2026</strong><small>Bleed No More: Generative Interference Reduction for Musical Recordings</small><span>Paper →</span></a>
+</div>
 
----
+<p class="program-back"><a href="../">← All research programs</a></p>
 
-### t-UNets
-
-This approach models the problem as instantaneous mixing and operates directly in the waveform domain. Neural networks replace optimization routines and learn the interference matrix implicitly. The network captures inter-microphone relationships and leverages them to suppress interference.
-
-- Pros: Fast training; low computational load; fast inference; minimal artifacts.
-- Cons: Assumes instantaneous mixing; limited performance on real-world live recordings.
-
-###### Download
-
-+ [Paper](https://ieeexplore.ieee.org/document/10248133)
-+ [Code and Data]( https://github.com/its-rajesh/IRMR/)
-+ [Audio Samples](https://sites.google.com/view/inmir/)
-
----
-
-### GIRNET
-
-GIRNet is designed for convolutive mixtures with additional noise and works in the time domain. It uses a graph attention mechanism to directly estimate interference-reduced signals. Each microphone recording is modeled as a node in a graph, and the graph attention network captures their dependencies to reduce interference.
-
-- Pros: Handles convolutive mixing; performs well on out-of-domain data with post-processing.
-- Cons: High training time and compute requirements.
-
-###### Download
-
-+ [Paper]() <span style="background-color: #f0f0f0; font-style: italic;">(Under Review)</span>
-+ [Code and Data]()
-+ [Audio Samples](https://sites.google.com/view/inmir/)
-
----
-
-### Generative based approach
-
-<span style="background-color: #f0f0f0; font-style: italic;">(Under Review)</span>
-
----
-
-### Learnable front ends
-
-<span style="background-color: #f0f0f0; font-style: italic;">(Under Review)</span>
-
----
-
-## Results on MUSDB18HQ
-
-We evaluate the proposed approaches on the MUSDB18HQ dataset—a widely-used benchmark for music source separation. To simulate realistic interference, the dataset was augmented with:
-
-- **Instantaneous Mixtures**: Basic signal-level bleed simulation.
-- **Reverberant Mixing**: Convolutive mixtures generated using room impulse responses via Pyroomacoustics.
-
-##### Performance of Proposed Models
-
-The table below compares various proposed methods against the baseline KAMIR algorithm. The median SDR (Source-to-Distortion Ratio) is reported across vocal, bass, drums, and other stems:
-
-| Models | Vocal | Bass | Drums | Others | Overall SDR | 
-|------|-----|-----|-----|-----|-----|
-|Reference| 1.86 | 4.44 | 6.78 | 5.96 | 5.82 | 
-|[KAMIR](https://ieeexplore.ieee.org/abstract/document/7178036)| 13.84 | 6.75 | 6.83 | 5.61 | 7.00 |
-|DI-CAE| 1.89 | 5.81 | 6.18 | 4.48 | 6.92 | 
-|Optimisation*| 39.25 | 42.90 | 44.22 | 42.11 | 42.12 |
-|t-UNet| 8.05 | 9.05 | 8.255 | 6.69 | 8.83 |
-|f-UNet| 6.15 | 9.41 | 7.01 | 7.23 | 7.45 | 
-|df-UNet| 6.50 | 9.84 | 8.85 | 8.32 | 8.37 |
-|df-UNet-GAT| 12.53 | 11.97 | 11.77 | 13.00 | __12.31__ |
-
-> \* Optimization is non-real-time and assumes ideal multichannel access.
-
----
+</div>
