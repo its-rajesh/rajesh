@@ -24,9 +24,6 @@ menu:
         - name: Blog
           url: blog/
           weight: 4
-        - name: Others
-          url: others/
-          weight: 5
 
 params:
     description: "This website hosts Rajesh's research papers, books, course materials, data, curriculum vitae, and contact information."
@@ -44,7 +41,7 @@ params:
     ShowBreadCrumbs: false
     ShowCodeCopyButtons: true
     ShowAllPagesInArchive: false
-    MainSections: ["papers","projects","others"]
+    MainSections: ["papers","projects"]
     ShowToc: false
     disableScrollToTop: true
     TocOpen: true
@@ -68,8 +65,6 @@ params:
               url: projects/
             - name: Blog
               url: blog/
-            - name: Others
-              url: others/
 
     socialIcons:
         - name: CV
