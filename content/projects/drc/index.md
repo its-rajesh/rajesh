@@ -43,7 +43,7 @@ summary: "Using dynamic range compression as a case study to compare mixture-dom
 ## Associated work
 
 <div class="work-grid">
-  <a class="work-card" href="../../papers/drc/"><strong>Is Source Separation Necessary for Multi-Source Dynamic Range Compression?</strong><small>Ongoing work comparing mixture-domain, source-aware, and separation-based DRC pipelines.</small><span>Manuscript page →</span></a>
+  <div class="work-card work-card-static"><strong>Is Source Separation Necessary for Multi-Source Dynamic Range Compression?</strong><small>Ongoing research comparing mixture-domain, source-aware, and separation-based DRC pipelines.</small><span>Ongoing · ICASSP 2027 submission</span></div>
 </div>
 
 <p class="program-back"><a href="../">← All research programs</a></p>
