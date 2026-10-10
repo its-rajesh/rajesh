@@ -6,7 +6,7 @@ description: "Research programs in interference reduction, distance-aware source
 <div class="projects-hero">
   <p class="projects-kicker">RESEARCH PROGRAMS</p>
   <h1>Four connected directions in machine listening.</h1>
-  <p class="projects-lead">Rather than treating each paper as an isolated project, I organize my work around a few recurring problems. Each program below collects the methods, experiments, papers, demos, and ongoing questions that belong to the same research direction.</p>
+  <p class="projects-lead">My projects explore how acoustic structure can make machine listening more effective: recovering sources from interference, reasoning about distance and space, sharing information across distributed sensors, and understanding when explicit source separation is actually needed.</p>
 </div>
 
 <div class="project-program-grid">
