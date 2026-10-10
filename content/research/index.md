@@ -5,86 +5,97 @@ url: "/research/"
 ---
 
 <div class="research-hero">
-  <p class="research-kicker">THE BROADER PICTURE</p>
+  <p class="research-kicker">RESEARCH VISION</p>
   <h1>Understanding sound as a scene, not just a signal.</h1>
-  <p class="research-lead">I study how machines can <strong>recover, understand, and reason about sound in complex acoustic environments</strong>. My work combines audio signal processing, acoustics, array processing, and machine learning, with an emphasis on exploiting the physical structure of how sound propagates through space.</p>
+  <p class="research-lead">I study how listening systems can <strong>recover, understand, and reason about sound in complex acoustic environments</strong>. My research combines signal processing, acoustics, array processing, and machine learning, with an emphasis on the physical structure of how sound propagates through space.</p>
 </div>
 
 <div class="research-question">
   <span>Central question</span>
-  <strong>How can listening systems separate what they hear, understand where it came from, cooperate across sensors, and know when the reconstruction is actually faithful?</strong>
+  <strong>How can a listening system separate what it hears, understand where the sound came from, cooperate across sensors, and determine whether the recovered scene is actually faithful?</strong>
 </div>
 
-<div class="research-map" aria-label="Research overview">
+<div class="research-map" aria-label="Overview of Rajesh Rameshbabu's research">
   <div class="map-node map-scene">
-    <span class="map-label">REAL ACOUSTIC SCENE</span>
-    <strong>Sources + room + microphones</strong>
+    <span class="map-label">OBSERVE</span>
+    <strong>Real acoustic scene</strong>
+    <small>sources · rooms · microphones · interference</small>
   </div>
-  <div class="map-arrow">↓</div>
+
+  <div class="map-connector"><span></span></div>
+
   <div class="map-grid">
-    <div class="map-node">
+    <div class="map-node map-theme">
       <span class="map-number">01</span>
       <strong>Recover sound</strong>
-      <small>Separation · interference reduction · dereverberation</small>
+      <small>separation · interference reduction · dereverberation</small>
     </div>
-    <div class="map-node">
+    <div class="map-node map-theme">
       <span class="map-number">02</span>
       <strong>Understand space</strong>
-      <small>Distance · direction · spatial structure</small>
+      <small>distance · direction · spatial structure</small>
     </div>
-    <div class="map-node">
+    <div class="map-node map-theme">
       <span class="map-number">03</span>
       <strong>Listen together</strong>
-      <small>Sensor networks · compact spatial representations</small>
+      <small>sensor networks · compact spatial representations</small>
     </div>
   </div>
-  <div class="map-arrow">↓</div>
+
+  <div class="map-connector"><span></span></div>
+
   <div class="map-node map-measure">
-    <span class="map-label">ACROSS ALL OF THEM</span>
+    <span class="map-label">EVALUATE ACROSS ALL THREE</span>
     <strong>Measure what matters</strong>
-    <small>Evaluation · perceptual fidelity · robustness</small>
+    <small>fidelity · robustness · perceptual relevance</small>
   </div>
 </div>
 
-## Recovering sound
+<div class="research-principle">
+  <span>Research principle</span>
+  <p>I am most interested in methods that do more than learn input-output mappings: I want models and representations that exploit acoustic structure, remain interpretable where possible, and continue to work when the room, array, or recording conditions change.</p>
+</div>
+
+## 01 · Recovering sound
 
 <div class="research-section">
   <p class="research-summary"><strong>Real recordings are mixtures created by acoustic propagation—not merely sums of clean signals.</strong></p>
-  <p>I work on methods that recover desired sources when recordings contain interference, bleed, reverberation, or competing speakers and instruments. A recurring theme is to ask which signal representation makes the structure of the problem easiest for a model to exploit, rather than treating the neural network as a black box.</p>
+  <p>I develop methods for recovering desired sources when recordings contain competing speakers or instruments, microphone bleed, reverberation, and other interference. A recurring question in this work is which signal representation exposes the useful structure of the problem most clearly to a learning system.</p>
   <div class="research-tags"><span>Source separation</span><span>Bleed reduction</span><span>Learned representations</span><span>Inverse problems</span></div>
-  <p class="research-link"><a href="../projects/">Explore related projects →</a> &nbsp; <a href="../papers/">Selected papers →</a></p>
+  <p class="research-link"><a href="../projects/">Related projects →</a><a href="../papers/">Selected papers →</a></p>
 </div>
 
-## Understanding acoustic space
+## 02 · Understanding acoustic space
 
 <div class="research-section">
-  <p class="research-summary"><strong>I want listening systems to infer not only <em>what</em> is sounding, but also <em>where it is, how far away it is, and how the environment transformed it</em>.</strong></p>
-  <p>This direction studies distance, direction, inter-channel structure, acoustic intensity, first-order ambisonics, and other spatial cues. I am particularly interested in spatial representations that help separation systems generalize across rooms and microphone geometries while remaining physically interpretable.</p>
-  <div class="research-tags"><span>Distance-aware separation</span><span>Spatial features</span><span>DoA</span><span>FOA / intensity</span><span>Acoustic vector sensors</span></div>
+  <p class="research-summary"><strong>A useful listening system should infer not only <em>what</em> is sounding, but also <em>where it is, how far away it is, and how the environment transformed it</em>.</strong></p>
+  <p>I study distance, direction, inter-channel structure, acoustic intensity, first-order ambisonics, and other spatial cues. The broader goal is to build spatial representations that improve separation and scene understanding while remaining grounded in array physics and robust across rooms and microphone geometries.</p>
+  <div class="research-tags"><span>Distance-aware separation</span><span>Spatial features</span><span>Direction of arrival</span><span>FOA / intensity</span><span>Acoustic vector sensors</span></div>
 </div>
 
-## Distributed listening
+## 03 · Distributed listening
 
 <div class="research-section">
-  <p class="research-summary"><strong>What is the smallest amount of acoustic information that sensors must exchange in order to listen cooperatively?</strong></p>
-  <p>Distributed microphone arrays can observe an acoustic scene from many locations, but sharing raw multichannel audio is expensive. I study distributed source separation and compact spatial features that preserve useful scene information while reducing communication bandwidth.</p>
+  <p class="research-summary"><strong>What is the smallest amount of acoustic information that sensors must exchange to listen cooperatively?</strong></p>
+  <p>Distributed arrays can observe the same scene from many locations, but transmitting raw multichannel audio is expensive. I study distributed source separation and compact spatial representations that retain useful scene information while reducing communication bandwidth.</p>
   <div class="research-tags"><span>Acoustic sensor networks</span><span>DANSE</span><span>Low-bandwidth features</span><span>Distributed arrays</span></div>
 </div>
 
-## Measuring what matters
+## 04 · Measuring what matters
 
 <div class="research-section">
-  <p class="research-summary"><strong>A good system needs a good definition of “better.”</strong></p>
-  <p>Evaluation metrics shape what models learn and what researchers conclude. I am interested in when familiar separation metrics become invariant to transformations that are perceptually or physically undesirable, and in evaluation methods that distinguish genuine source recovery from target alteration.</p>
+  <p class="research-summary"><strong>A good system also needs a defensible definition of “better.”</strong></p>
+  <p>Evaluation metrics shape both what models learn and what researchers conclude. I am interested in identifying when common separation metrics become insensitive to transformations that alter the target, and in evaluation methods that better distinguish genuine source recovery from undesirable target modification.</p>
   <div class="research-tags"><span>Separation metrics</span><span>Perceptual fidelity</span><span>Robustness</span><span>Target preservation</span></div>
 </div>
 
 <div class="research-connection">
-  <p><strong>These directions are not separate problems.</strong> Spatial understanding can provide cues for separation; distributed arrays provide richer observations of the same scene; compact representations determine what information can be shared or learned; and meaningful evaluation tells us whether the recovered signal is genuinely faithful.</p>
+  <span>Why these belong together</span>
+  <p><strong>These are different views of the same acoustic scene.</strong> Spatial understanding provides cues for separation; distributed arrays provide richer observations; compact representations determine what information can be communicated or learned; and meaningful evaluation tells us whether the recovered signal remains faithful to the source.</p>
 </div>
 
-## The direction I am moving toward
+## Toward scene-aware machine listening
 
-I am increasingly interested in listening systems that combine these capabilities rather than solving each task independently: systems that form a useful internal representation of an acoustic scene and can use it for separation, localization, distance reasoning, enhancement, and other downstream tasks.
+My longer-term goal is to build listening systems that combine these capabilities rather than solving each task independently: systems that develop a useful internal representation of an acoustic scene and can reuse it for separation, localization, distance reasoning, enhancement, and other downstream audio tasks.
 
-<p class="research-footer-links"><a href="../projects/">Projects</a> · <a href="../papers/">Papers</a> · <a href="../blog/">Research notes</a></p>
+<p class="research-footer-links"><a href="../projects/">Projects</a><span>·</span><a href="../papers/">Papers</a><span>·</span><a href="../blog/">Research notes</a></p>
