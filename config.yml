@@ -12,21 +12,24 @@ taxonomies:
 
 menu:
     main:
-        - name: Projects
-          url: projects/
-          weight: 2 
+        - name: Research
+          url: research/
+          weight: 1
         - name: Papers
           url: papers/
-          weight: 1
+          weight: 2
+        - name: Projects
+          url: projects/
+          weight: 3
         - name: Blog
           url: blog/
-          weight: 3
+          weight: 4
         - name: Others
           url: others/
-          weight: 4 
+          weight: 5
         #- name: Dharmicwaves
         #  url: https://its-rajesh.github.io/dharmicwaves/
-        #  weight: 5
+        #  weight: 6
 
 params:
     description: "This website hosts Rajesh's research papers, books, course materials, data, curriculum vitae, and contact information."
@@ -55,11 +58,13 @@ params:
     profileMode:
           enabled: true
           title: Rajesh Rameshbabu
-          subtitle: "I am a PhD scholar in the Listening Technology Lab at the University of Illinois Chicago, USA, working under the supervision of Prof. Ryan Corey. My research focuses on audio signal processing, machine learning, and deep learning. I earned my MS by Research from IIT Mandi, India, with a reseach focus on interference reduction and source separation."
+          subtitle: "I am a PhD scholar in the Listening Technology Lab at the University of Illinois Chicago, USA, working under the supervision of Prof. Ryan Corey. I study machine listening in complex acoustic environments, with a focus on source separation, spatial understanding, and distributed acoustic sensing. I earned my MS by Research from IIT Mandi, India, where I worked on interference reduction and source separation."
           imageUrl: "img2.jpeg"
           imageWidth: 160
           imageHeight: 160
           buttons:
+            - name: Research
+              url: research/
             - name: Papers
               url: papers/
             - name: Projects
@@ -119,4 +124,3 @@ markup:
         endLevel: 2
         ordered: false
         startLevel: 2
-
