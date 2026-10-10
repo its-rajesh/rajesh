@@ -1,0 +1,11 @@
+{{- define "main" }}
+<article class="post-single research-single">
+  {{- if .Content }}
+  <div class="post-content research-content">
+    {{- if not (.Param "disableAnchoredHeadings") }}
+    {{- partial "anchored_headings.html" .Content -}}
+    {{- else }}{{ .Content }}{{ end }}
+  </div>
+  {{- end }}
+</article>
+{{- end }}
