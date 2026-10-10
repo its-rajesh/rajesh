@@ -28,7 +28,7 @@ summary: "Using dynamic range compression as a case study to compare mixture-dom
 
 <div class="method-item"><span>01</span><div><h3>Mixture-domain DRC</h3><p>Apply compression directly to the observed mixture without attempting to recover the individual sources.</p><small>This is the simplest and lowest-complexity baseline.</small></div></div>
 
-<div class="method-item"><span>02</span><div><h3>Source-aware processing</h3><p>Use information about the constituent sources to guide compression without necessarily requiring perfect waveform reconstruction of every source.</p><small>This tests whether useful source structure can help even when full separation is unnecessary.</small></div></div>
+<div class="method-item"><span>02</span><div><h3>Source-aware processing</h3><p>Use information about the constituent sources to guide compression without necessarily requiring perfect reconstruction of every source.</p><small>This tests whether useful source structure can help even when full separation is unnecessary.</small></div></div>
 
 <div class="method-item"><span>03</span><div><h3>Separate → compress → remix</h3><p>Explicitly separate the mixture, apply compression independently to the estimated sources, and combine the processed outputs.</p><small>This provides the strongest source-wise control, but also inherits separation errors and additional computation.</small></div></div>
 
@@ -43,7 +43,7 @@ summary: "Using dynamic range compression as a case study to compare mixture-dom
 ## Associated work
 
 <div class="work-grid">
-  <div class="work-card work-card-static"><strong>Is Source Separation Necessary for Multi-Source Dynamic Range Compression?</strong><small>Ongoing work comparing mixture-domain, source-aware, and separation-based DRC pipelines.</small><span>Research manuscript in progress</span></div>
+  <a class="work-card" href="../../papers/drc/"><strong>Is Source Separation Necessary for Multi-Source Dynamic Range Compression?</strong><small>Ongoing work comparing mixture-domain, source-aware, and separation-based DRC pipelines.</small><span>Manuscript page →</span></a>
 </div>
 
 <p class="program-back"><a href="../">← All research programs</a></p>
