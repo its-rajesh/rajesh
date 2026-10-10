@@ -37,10 +37,12 @@ description: "Published research papers by Rajesh Rameshbabu."
   </div>
 </a>
 
+<div class="pub-year"><span>2025</span></div>
+
 <a class="pub-entry pub-award" href="dbsspoma/">
   <div class="pub-dot"></div>
   <div class="pub-card">
-    <div class="pub-topline"><span class="pub-venue">Proceedings of Meetings on Acoustics · 2026</span><span class="pub-type">🏆 Student Paper Competition Winner</span></div>
+    <div class="pub-topline"><span class="pub-venue">Proceedings of Meetings on Acoustics · 2025</span><span class="pub-type">🏆 Student Paper Competition Winner</span></div>
     <h2>Learning Distance-dependent Spatial Structure For Multichannel Source Separation</h2>
     <p class="pub-authors"><strong>Rajesh Rameshbabu</strong>, Rashen Fernando, Ryan Corey</p>
     <p class="pub-affiliation">Listening Technology Lab · University of Illinois Chicago</p>
