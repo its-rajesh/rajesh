@@ -68,13 +68,8 @@ url: "/research/"
   <div class="research-tags"><span>Source separation</span><span>Bleed reduction</span><span>Learned representations</span><span>Inverse problems</span><span>Dynamic range compression</span></div>
 
   <div class="work-grid">
-    <a class="work-card" href="../papers/cganir/"><strong>cGANIR</strong><small>Learning-based interference reduction for multitrack music</small><span>Paper →</span></a>
-    <a class="work-card" href="../papers/girnet/"><strong>GIRNet</strong><small>Graph-informed interference reduction and source separation</small><span>Paper →</span></a>
-    <a class="work-card" href="../papers/paper2/"><strong>MS Thesis</strong><small>Interference reduction and source separation in music recordings</small><span>Thesis →</span></a>
-    <a class="work-card" href="../papers/paper1/"><strong>WASPAA Bleed Reduction</strong><small>Learning-based reduction of microphone bleed in live multitrack recordings</small><span>Paper →</span></a>
-    <a class="work-card" href="../projects/project2/"><strong>Music Bleed Reduction</strong><small>Project page collecting interference-reduction work</small><span>Project →</span></a>
-    <a class="work-card" href="../projects/project1/"><strong>Music Source Separation</strong><small>Source separation for Indian Art Music and multitrack recordings</small><span>Project →</span></a>
-    <div class="work-card work-card-static"><strong>Multi-source Dynamic Range Compression</strong><small>Studying when source separation is—and is not—necessary for downstream DRC</small><span>Ongoing work</span></div>
+    <a class="work-card" href="../projects/project2/"><strong>Interference & Bleed Reduction</strong><small>From optimization and waveform networks to generative models and learnable front ends.</small><span>Project program →</span></a>
+    <a class="work-card" href="../projects/drc/"><strong>Multi-Source Dynamic Range Compression</strong><small>When is explicit source separation actually necessary for downstream audio processing?</small><span>Project program →</span></a>
   </div>
 </div>
 
@@ -86,8 +81,7 @@ url: "/research/"
   <div class="research-tags"><span>Distance-aware separation</span><span>Spatial features</span><span>Direction of arrival</span><span>FOA / intensity</span><span>Acoustic vector sensors</span></div>
 
   <div class="work-grid">
-    <a class="work-card" href="../projects/dbss/"><strong>Distance-based Source Separation</strong><small>Project page for distance-aware multichannel source separation</small><span>Project →</span></a>
-    <a class="work-card" href="../papers/dbsspoma/"><strong>Distance-dependent Spatial Structure</strong><small>Learning spatial structure for multichannel source separation</small><span>Paper →</span></a>
+    <a class="work-card" href="../projects/dbss/"><strong>Distance-Based Source Separation</strong><small>Learning and exploiting distance-dependent spatial structure for multichannel separation.</small><span>Project program →</span></a>
   </div>
 </div>
 
@@ -99,7 +93,7 @@ url: "/research/"
   <div class="research-tags"><span>Acoustic sensor networks</span><span>DANSE</span><span>Low-bandwidth features</span><span>Distributed arrays</span></div>
 
   <div class="work-grid">
-    <a class="work-card" href="../papers/asnrest/"><strong>Distributed Acoustic Sensor Networks</strong><small>Collaborative source separation with spatially distributed microphone arrays</small><span>Paper →</span></a>
+    <a class="work-card" href="../projects/asn/"><strong>Acoustic Sensor Networks</strong><small>Cooperative enhancement, distributed arrays, and compact spatial information sharing.</small><span>Project program →</span></a>
   </div>
 </div>
 
@@ -109,6 +103,9 @@ url: "/research/"
   <p class="research-summary"><strong>A good system also needs a defensible definition of “better.”</strong></p>
   <p>Evaluation metrics shape both what models learn and what researchers conclude. I am interested in identifying when common separation metrics become insensitive to transformations that alter the target, and in evaluation methods that better distinguish genuine source recovery from undesirable target modification.</p>
   <div class="research-tags"><span>Separation metrics</span><span>Perceptual fidelity</span><span>Robustness</span><span>Target preservation</span></div>
+  <div class="work-grid">
+    <a class="work-card" href="../projects/"><strong>Evaluation across research programs</strong><small>These questions cut across interference reduction, spatial separation, distributed listening, and downstream processing.</small><span>View projects →</span></a>
+  </div>
 </div>
 
 <div class="research-connection">
