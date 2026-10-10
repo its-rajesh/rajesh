@@ -1,0 +1,11 @@
+{{- define "main" }}
+<main class="papers-section-only">
+  {{- if .Content }}
+  <div class="post-content papers-content">
+    {{- if not (.Param "disableAnchoredHeadings") }}
+    {{- partial "anchored_headings.html" .Content -}}
+    {{- else }}{{ .Content }}{{ end }}
+  </div>
+  {{- end }}
+</main>
+{{- end }}
