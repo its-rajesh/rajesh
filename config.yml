@@ -27,9 +27,6 @@ menu:
         - name: Others
           url: others/
           weight: 5
-        #- name: Dharmicwaves
-        #  url: https://its-rajesh.github.io/dharmicwaves/
-        #  weight: 6
 
 params:
     description: "This website hosts Rajesh's research papers, books, course materials, data, curriculum vitae, and contact information."
@@ -58,7 +55,7 @@ params:
     profileMode:
           enabled: true
           title: Rajesh Rameshbabu
-          subtitle: "I am a PhD scholar in the Listening Technology Lab at the University of Illinois Chicago, USA, working under the supervision of Prof. Ryan Corey. I study machine listening in complex acoustic environments, with a focus on source separation, spatial understanding, and distributed acoustic sensing. I earned my MS by Research from IIT Mandi, India, where I worked on interference reduction and source separation."
+          subtitle: "PhD researcher in the Listening Technology Lab at the University of Illinois Chicago, advised by Prof. Ryan Corey. I study machine listening in complex acoustic environments, with a focus on source separation, spatial understanding, and distributed acoustic sensing. Previously, I completed my MS by Research at IIT Mandi, working on interference reduction and music source separation."
           imageUrl: "img2.jpeg"
           imageWidth: 160
           imageHeight: 160
@@ -71,14 +68,8 @@ params:
               url: projects/
             - name: Blog
               url: blog/
-            #- name: Courses
-            #  url: courses/
-            #- name: Tags
-            #  url: tags/
             - name: Others
               url: others/
-            #- name: Dharmicwaves
-            #  url: https://its-rajesh.github.io/dharmicwaves/
 
     socialIcons:
         - name: CV
@@ -87,10 +78,6 @@ params:
           url: mailto:rajeshr12@zohomail.com
         - name: LinkedIn
           url: https://www.linkedin.com/in/rajeshrrajeshr/
-        #- name: Location
-        #  url: location/
-        #- name: Office Hours
-        #  url: officehours/
         - name: Google Scholar
           url: https://scholar.google.com/citations?user=QOwRUvMAAAAJ&hl=en
         - name: GitHub
@@ -99,7 +86,6 @@ params:
           url: https://www.instagram.com/waveandmind/
         - name: Twitter
           url: https://x.com/Rajesh_smartino
-        
 
     assets:
         disableScrollBarStyle: true
@@ -119,7 +105,7 @@ markup:
             unsafe: true
     highlight:
         guessSyntax: true
-        style: autumn 
+        style: autumn
     tableOfContents:
         endLevel: 2
         ordered: false
