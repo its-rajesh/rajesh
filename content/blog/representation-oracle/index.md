@@ -1,6 +1,7 @@
 ---
 title: "When Does Audio Become Separable?"
 date: 2025-12-19
+description: "An oracle masking study asking whether sparsity really explains source separation, and why multi-resolution representations work better."
 tags: ["audio", "source separation", "signal representations"]
 ---
 
