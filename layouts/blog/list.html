@@ -1,0 +1,27 @@
+{{- define "main" }}
+<main class="blog-section-only">
+  {{- if .Content }}
+  <div class="blog-content">
+    {{ .Content }}
+  </div>
+  {{- end }}
+
+  <section class="blog-list" aria-label="Blog posts">
+    {{- range .RegularPages.ByDate.Reverse }}
+    <a class="blog-card" href="{{ .RelPermalink }}">
+      <div class="blog-card-meta">
+        <span>{{ .Date.Format "Jan 2006" }}</span>
+        {{- with .Params.tags }}
+        <div class="blog-card-tags">
+          {{- range first 3 . }}<span>{{ . }}</span>{{- end }}
+        </div>
+        {{- end }}
+      </div>
+      <h2>{{ .Title }}</h2>
+      <p>{{ with .Description }}{{ . }}{{ else }}{{ .Summary | plainify | htmlUnescape | truncate 180 }}{{ end }}</p>
+      <span class="blog-read">Read note →</span>
+    </a>
+    {{- end }}
+  </section>
+</main>
+{{- end }}
