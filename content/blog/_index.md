@@ -1,5 +1,6 @@
 ---
 title: "Blog"
+layout: "landing"
 description: "Notes on research, technology, philosophy, learning, and ideas worth thinking about."
 ---
 
