@@ -16,8 +16,7 @@ editPost:
 
 <p style="text-align:center">
   <a href="https://listeningtech.github.io/girnet/">Canonical supplementary site</a> ·
-  <a href="https://github.com/its-rajesh/GIRNet">Code and protocols</a> ·
-  Manuscript in preparation for IEEE Signal Processing Letters
+  <a href="https://github.com/its-rajesh/GIRNet">Code and protocols</a>
 </p>
 
 ---
@@ -60,7 +59,7 @@ directed edge estimates.
 | Strongest-edge accuracy | 44.51% (8.33% chance) |
 | Edge MAE | 5.29 dB |
 
-![Graph recovery, interventions, and loss ablations](graph_claim_v4.png)
+![Graph recovery, interventions, and loss ablations](graph_evidence_v4.png)
 
 The edge estimates preserve relative path structure but compress the dB range;
 they should be interpreted as an ordered, approximately calibrated
@@ -90,8 +89,8 @@ Removing adjacency supervision leaves SI-SDRi statistically unresolved
 (-0.086 dB [-0.202, 0.027]) but reduces graph correlation from 0.810 to 0.587,
 increases edge MAE from 5.29 to 10.62 dB, and reduces SIRi by 1.041 dB.
 Adjacency supervision therefore supplies graph fidelity and improves
-interference rejection. HSIC changes the interference–artifact tradeoff and is
-not claimed as the principal contribution.
+interference rejection. Removing HSIC increases SI-SDRi by 0.149 dB, reduces
+SIRi by 0.648 dB, and increases SAR by 0.942 dB relative to the full model.
 
 ![Performance versus common bleed level and reverberation](conditions_v4.png)
 
