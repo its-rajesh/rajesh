@@ -1,0 +1,46 @@
+/* Academic lineage editorial layout — scoped to this blog article */
+.genealogy{--g-ink:#1b3042;--g-muted:#657584;--g-line:#d7e0e6;--g-accent:#216b87;--g-green:#327b73;--g-paper:#f6f9fa;margin:2rem 0 2.8rem;color:var(--primary)}
+.genealogy *{box-sizing:border-box}
+.genealogy a{text-decoration:none!important}
+.genealogy .g-hero{position:relative;overflow:hidden;padding:clamp(1.4rem,4vw,3rem);border:1px solid var(--border);border-radius:22px;background:linear-gradient(130deg,#edf5f8 0%,#f8fbfc 57%,#f2f7f3 100%);color:var(--g-ink)}
+.genealogy .g-hero:after{content:"";position:absolute;width:300px;height:300px;right:-135px;top:-140px;border:45px solid rgba(33,107,135,.055);border-radius:50%;pointer-events:none}
+.genealogy .g-eyebrow{font-size:.7rem;font-weight:800;letter-spacing:.17em;text-transform:uppercase;color:var(--g-accent);margin:0 0 .85rem}
+.genealogy .g-hero h2{font-family:Georgia,serif;font-size:clamp(1.65rem,3.4vw,2.6rem);line-height:1.12;letter-spacing:-.025em;color:var(--g-ink);margin:0 0 .8rem}
+.genealogy .g-hero p{max-width:42rem;font-size:.98rem;line-height:1.65;color:#4e6573;margin:0}
+.genealogy .g-meta{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1.4rem}
+.genealogy .g-meta span{font-size:.73rem;font-weight:650;padding:.36rem .65rem;border:1px solid #cedee4;border-radius:99px;background:rgba(255,255,255,.7);color:#39576a}
+.genealogy .g-branches{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem;margin:1.3rem 0}
+.genealogy .g-branch{min-width:0;padding:1.15rem 1.1rem 1.3rem;border:1px solid var(--border);border-radius:18px;background:var(--entry)}
+.genealogy .g-branch-head{display:flex;align-items:center;gap:.7rem;margin-bottom:1.4rem}
+.genealogy .g-branch-symbol{display:grid;place-items:center;flex:0 0 36px;width:36px;height:36px;border-radius:11px;color:#fff;background:var(--g-accent);font-family:Georgia,serif;font-size:1.1rem}
+.genealogy .g-ms .g-branch-symbol{background:var(--g-green)}
+.genealogy .g-branch-title{display:block;font-size:1rem;font-weight:750;line-height:1.35}
+.genealogy .g-branch-subtitle{font-size:.71rem;line-height:1.4;color:var(--secondary)}
+.genealogy .g-chain{list-style:none!important;padding:0!important;margin:0!important;counter-reset:gn}
+.genealogy .g-chain li{position:relative;margin:0 0 13px 12px!important;padding:0 0 0 17px!important;list-style:none!important}
+.genealogy .g-chain li:before{content:"";position:absolute;left:-12px;top:18px;width:9px;height:9px;border:2px solid var(--g-accent);background:var(--entry);border-radius:50%;z-index:1}
+.genealogy .g-ms .g-chain li:before{border-color:var(--g-green)}
+.genealogy .g-chain li:not(:last-child):after{content:"";position:absolute;left:-8px;top:26px;bottom:-22px;width:1px;background:var(--g-line)}
+.genealogy .g-person{display:block;padding:.73rem .85rem;border-radius:11px;border:1px solid var(--border);background:var(--theme);min-height:68px;transition:border-color .2s,transform .2s,box-shadow .2s}
+.genealogy a.g-person:hover,.genealogy a.g-person:focus-visible{border-color:var(--g-accent);transform:translateX(3px);box-shadow:0 3px 14px rgba(20,50,70,.07)}
+.genealogy .g-name{display:block;font-size:.91rem;line-height:1.35;font-weight:720;color:var(--primary)}
+.genealogy .g-role{display:block;font-size:.73rem;line-height:1.5;color:var(--secondary);margin-top:.16rem}
+.genealogy .g-current .g-person{background:#eaf4f8;border-color:#c8e0ec}
+.genealogy .g-ms .g-current .g-person{background:#eff7f2;border-color:#d1e5da}
+.genealogy .g-current .g-name{color:#164f68}
+.genealogy .g-ms .g-current .g-name{color:#276950}
+.genealogy .g-converge{display:grid;justify-items:center;gap:.65rem;margin:.3rem 0 1.4rem}
+.genealogy .g-converge-mark{height:27px;width:1px;background:var(--g-line)}
+.genealogy .g-converge-card{width:100%;padding:1.15rem 1.5rem;border:1px solid #c5dce5;background:linear-gradient(100deg,#eaf4f8,#f2f9f5);border-radius:16px;text-align:center}
+.genealogy .g-converge-card strong{display:block;font-size:1.1rem;color:#204b5d}
+.genealogy .g-converge-card span{display:block;font-size:.8rem;line-height:1.6;color:#4a6571;margin-top:.2rem}
+.genealogy .g-note{font-size:.79rem;line-height:1.65;color:var(--secondary);margin:.65rem 0 0!important}
+.genealogy .g-erdos{display:grid;grid-template-columns:110px minmax(0,1fr);gap:1.2rem;align-items:center;border:1px solid var(--border);border-radius:16px;background:var(--entry);padding:1.35rem;margin:1.5rem 0}
+.genealogy .g-value{font-family:Georgia,serif;font-size:3rem;line-height:1;font-weight:700;color:var(--g-accent);text-align:center}
+.genealogy .g-value small{display:block;font-family:system-ui,sans-serif;font-size:.63rem;letter-spacing:.1em;font-weight:800;text-transform:uppercase;margin-top:.6rem;color:var(--secondary)}
+.genealogy .g-erdos h3{font-size:1.03rem;margin:0 0 .4rem}
+.genealogy .g-erdos p{font-size:.83rem;line-height:1.65;margin:0;color:var(--secondary)}
+.genealogy .g-path{font-size:.76rem;color:var(--secondary);text-align:center;margin:.6rem 0 0}
+@media(max-width:680px){.genealogy .g-branches{grid-template-columns:1fr}.genealogy .g-branch{padding:1rem}.genealogy .g-erdos{grid-template-columns:1fr;gap:.8rem;text-align:center}.genealogy .g-hero{border-radius:16px}.genealogy .g-value{font-size:2.8rem}}
+@media(prefers-reduced-motion:reduce){.genealogy a.g-person{transition:none}}
+@media(prefers-color-scheme:dark){.genealogy .g-hero{background:linear-gradient(130deg,#1a303b,#1c2b31);border-color:var(--border)}.genealogy .g-hero h2,.genealogy .g-eyebrow{color:#c4e5ef}.genealogy .g-hero p{color:#bacbd4}.genealogy .g-meta span{background:#263b45;border-color:#3b5260;color:#d6e7ed}.genealogy .g-current .g-person,.genealogy .g-ms .g-current .g-person{background:#203740;border-color:#405969}.genealogy .g-current .g-name,.genealogy .g-ms .g-current .g-name{color:#c6eced}.genealogy .g-converge-card{background:#21353e;border-color:#425c66}.genealogy .g-converge-card strong,.genealogy .g-converge-card span{color:#c8dfe7}}
