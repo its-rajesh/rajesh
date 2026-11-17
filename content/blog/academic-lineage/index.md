@@ -11,6 +11,10 @@ That conversation sent me down an unexpected rabbit hole: who trained my advisor
 
 I have two routes to explore. I am doing my PhD at the University of Illinois Chicago with Ryan Corey, and I previously completed an MS by Research at IIT Mandi with Padmanabhan Rajan. Both routes lead into the history of signal processing, though in different ways.
 
+![Two academic lineages: UIC PhD supervision and IIT Mandi MS mentorship](academic-family-tree.svg)
+
+*Interactive academic family tree: click an underlined name to explore its linked source. The two branches distinguish doctoral supervision from master's mentorship.*
+
 ## My PhD lineage: UIC to MIT
 
 Here is the advisor chain I found, beginning with me and moving backward:
