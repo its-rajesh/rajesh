@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 940" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1015" role="img" aria-labelledby="title desc">
 <title id="title">Two academic lineages of Rajesh Rameshbabu</title>
 <desc id="desc">Doctoral supervision from Norbert Wiener through Yuk-Wing Lee, Amar Bose, Alan Oppenheim, Andrew Singer, Ryan Corey to Rajesh; and master's mentorship via B S Ramakrishna, Bayya Yegnanarayana, Hema Murthy, and Padmanabhan Rajan to Rajesh. Click underlined names for background records.</desc>
 <style>
@@ -13,7 +13,7 @@ text{font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-seri
 a .name{text-decoration:underline;text-decoration-color:#a8bfce}
 a:focus .node,a:hover .node{stroke:#1267a7;stroke-width:2.5}
 </style>
-<rect width="1000" height="940" fill="#fff"/>
+<rect width="1000" height="1015" fill="#fff"/>
 <text x="500" y="39" text-anchor="middle" font-size="30" font-weight="750" fill="#172a3d">My Academic Family Tree</text>
 <text x="500" y="65" text-anchor="middle" class="sub">Two routes through signal processing</text><rect x="18" y="89" rx="13" width="472" height="46" fill="#e9f3fc" stroke="#a9c9df"/>
 <text x="254" y="119" class="heading" text-anchor="middle">PhD lineage</text><a href="https://en.wikipedia.org/wiki/Norbert_Wiener" target="_blank"><rect x="42" y="151" width="424" height="74" rx="12" class="node"/>
@@ -41,5 +41,5 @@ a:focus .node,a:hover .node{stroke:#1267a7;stroke-width:2.5}
 <text x="557" y="631" class="name">Padmanabhan Rajan</text>
 <text x="557" y="654" class="detail">MS research advisor · IIT Mandi</text><line x1="746" y1="719" x2="746" y2="748" class="line"/><rect x="534" y="748" width="424" height="74" rx="12" class="me"/>
 <text x="557" y="778" class="name">Rajesh Rameshbabu</text>
-<text x="557" y="801" class="detail">MS by Research · IIT Mandi</text><line x1="22" x2="978" y1="902" y2="902" stroke="#d3e1eb"/>
-<text x="500" y="923" text-anchor="middle" font-size="13" fill="#556b7d">UIC: doctoral supervision · IIT Mandi: master’s mentorship, followed by doctoral supervision</text></svg>
+<text x="557" y="801" class="detail">MS by Research · IIT Mandi</text><line x1="22" x2="978" y1="974" y2="974" stroke="#d3e1eb"/>
+<text x="500" y="996" text-anchor="middle" font-size="13" fill="#556b7d">UIC: doctoral supervision · IIT Mandi: master’s mentorship, followed by doctoral supervision</text></svg>
