@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 940" role="img" aria-labelledby="title desc">
+<title id="title">Two academic lineages of Rajesh Rameshbabu</title>
+<desc id="desc">Doctoral supervision from Norbert Wiener through Yuk-Wing Lee, Amar Bose, Alan Oppenheim, Andrew Singer, Ryan Corey to Rajesh; and master's mentorship via B S Ramakrishna, Bayya Yegnanarayana, Hema Murthy, and Padmanabhan Rajan to Rajesh. Click underlined names for background records.</desc>
+<style>
+text{font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+.heading{font-size:25px;font-weight:700;fill:#153453}
+.sub{font-size:15px;fill:#50687d}
+.name{font-size:18px;font-weight:650;fill:#153453}
+.detail{font-size:13px;fill:#576b7e}
+.line{stroke:#b1c5d4;stroke-width:2}
+.node{fill:#fff;stroke:#a9c1d2;stroke-width:1.4}
+.me{fill:#e9f3fc;stroke:#28628c;stroke-width:2}
+a .name{text-decoration:underline;text-decoration-color:#a8bfce}
+a:focus .node,a:hover .node{stroke:#1267a7;stroke-width:2.5}
+</style>
+<rect width="1000" height="940" fill="#fff"/>
+<text x="500" y="39" text-anchor="middle" font-size="30" font-weight="750" fill="#172a3d">My Academic Family Tree</text>
+<text x="500" y="65" text-anchor="middle" class="sub">Two routes through signal processing</text><rect x="18" y="89" rx="13" width="472" height="46" fill="#e9f3fc" stroke="#a9c9df"/>
+<text x="254" y="119" class="heading" text-anchor="middle">PhD lineage</text><a href="https://en.wikipedia.org/wiki/Norbert_Wiener" target="_blank"><rect x="42" y="151" width="424" height="74" rx="12" class="node"/>
+<text x="65" y="181" class="name">Norbert Wiener</text>
+<text x="65" y="204" class="detail">Harvard PhD · 1913</text></a><line x1="254" y1="239" x2="254" y2="268" class="line"/><a href="https://en.wikipedia.org/wiki/Yuk-Wing_Lee" target="_blank"><rect x="42" y="268" width="424" height="74" rx="12" class="node"/>
+<text x="65" y="298" class="name">Yuk-Wing Lee</text>
+<text x="65" y="321" class="detail">MIT ScD · 1930</text></a><line x1="254" y1="356" x2="254" y2="385" class="line"/><a href="https://bosefellows.mit.edu/drbose/" target="_blank"><rect x="42" y="385" width="424" height="74" rx="12" class="node"/>
+<text x="65" y="415" class="name">Amar G. Bose</text>
+<text x="65" y="438" class="detail">MIT ScD · 1956</text></a><line x1="254" y1="473" x2="254" y2="502" class="line"/><a href="https://ethw.org/Oral-History:Alan_Oppenheim" target="_blank"><rect x="42" y="502" width="424" height="74" rx="12" class="node"/>
+<text x="65" y="532" class="name">Alan V. Oppenheim</text>
+<text x="65" y="555" class="detail">MIT ScD · 1964</text></a><line x1="254" y1="590" x2="254" y2="619" class="line"/><a href="https://ece.illinois.edu/about/directory/faculty/acsinger" target="_blank"><rect x="42" y="619" width="424" height="74" rx="12" class="node"/>
+<text x="65" y="649" class="name">Andrew C. Singer</text>
+<text x="65" y="672" class="detail">MIT PhD · 1996</text></a><line x1="254" y1="707" x2="254" y2="736" class="line"/><a href="https://www.ryan-corey.com/" target="_blank"><rect x="42" y="736" width="424" height="74" rx="12" class="node"/>
+<text x="65" y="766" class="name">Ryan M. Corey</text>
+<text x="65" y="789" class="detail">PhD advisor · UIC</text></a><line x1="254" y1="824" x2="254" y2="853" class="line"/><rect x="42" y="853" width="424" height="74" rx="12" class="me"/>
+<text x="65" y="883" class="name">Rajesh Rameshbabu</text>
+<text x="65" y="906" class="detail">PhD researcher · UIC</text><rect x="510" y="89" rx="13" width="472" height="46" fill="#e9f3fc" stroke="#a9c9df"/>
+<text x="746" y="119" class="heading" text-anchor="middle">MS mentorship lineage</text><rect x="534" y="160" width="424" height="74" rx="12" class="node"/>
+<text x="557" y="190" class="name">B. S. Ramakrishna</text>
+<text x="557" y="213" class="detail">Acoustics · PhD 1949</text><line x1="746" y1="278" x2="746" y2="307" class="line"/><a href="https://signalprocessingsociety.org/index.php/newsletter/2021/02/interview-prof-b-yegnanarayana-insa-senior-scientist-iiit-hyderabad-india" target="_blank"><rect x="534" y="307" width="424" height="74" rx="12" class="node"/>
+<text x="557" y="337" class="name">Bayya Yegnanarayana</text>
+<text x="557" y="360" class="detail">Room acoustics · PhD 1974</text></a><line x1="746" y1="425" x2="746" y2="454" class="line"/><a href="https://signalprocessingsociety.org/our-story/news-updates/2020/09/series-highlight-women-signal-processing-dr-hema-murthy" target="_blank"><rect x="534" y="454" width="424" height="74" rx="12" class="node"/>
+<text x="557" y="484" class="name">Hema A. Murthy</text>
+<text x="557" y="507" class="detail">Speech and music · PhD 1992</text></a><line x1="746" y1="572" x2="746" y2="601" class="line"/><rect x="534" y="601" width="424" height="74" rx="12" class="node"/>
+<text x="557" y="631" class="name">Padmanabhan Rajan</text>
+<text x="557" y="654" class="detail">MS research advisor · IIT Mandi</text><line x1="746" y1="719" x2="746" y2="748" class="line"/><rect x="534" y="748" width="424" height="74" rx="12" class="me"/>
+<text x="557" y="778" class="name">Rajesh Rameshbabu</text>
+<text x="557" y="801" class="detail">MS by Research · IIT Mandi</text><line x1="22" x2="978" y1="902" y2="902" stroke="#d3e1eb"/>
+<text x="500" y="923" text-anchor="middle" font-size="13" fill="#556b7d">UIC: doctoral supervision · IIT Mandi: master’s mentorship, followed by doctoral supervision</text></svg>
